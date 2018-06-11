@@ -1847,26 +1847,26 @@ LIST @arg1 = @arg1 ;
 LIST @arg2 = @arg2 ;
 LIST @obl = @obl ;
 LIST @argcl = @argcl;
-LIST @obl.arg =  @obl.arg;
+LIST @obl-arg =  @obl-arg;
 LIST @obl-adv = @obl-adv;
 LIST @aux = @aux;
 
-LIST@punct = @punct;
-LIST@mark = @mark;
-LIST@fixed = @fixed;
-LIST@advmod = @advmod;
-LIST@case = @case;
-LIST@aux:fin = @aux:fin;
-LIST@neg = @neg;
-LIST@appos = @appos;
-LIST@amod = @amod;
-LIST@nmod = @nmod;
-LIST@det = @det;
-LIST@nmod:poss = @nmod:poss;
-LIST@nummod = @nummod;
-LIST@nmod:pro = @nmod:pro;
-LIST@conj = @conj;
-LIST@cc = @cc;
+LIST @punct = @punct;
+LIST @mark = @mark;
+LIST @fixed = @fixed;
+LIST @advmod = @advmod;
+LIST @case = @case;
+LIST @aux-fin = @aux-fin;
+LIST @neg = @neg;
+LIST @appos = @appos;
+LIST @amod = @amod;
+LIST @nmod = @nmod;
+LIST @det = @det;
+LIST @nmod-poss = @nmod-poss;
+LIST @nummod = @nummod;
+LIST @nmod-pro = @nmod-pro;
+LIST @conj = @conj;
+LIST @cc = @cc;
 
 LIST >>> = >>> ;
 LIST <<< = <<< ;
@@ -1936,7 +1936,7 @@ MAP (@nummod) TARGET (NUM)(p Head_NOUN);
 #pronouns
 SETPARENT (PRON) - (\^arg1) - (\^arg2) - (\^obl-arg) - (\^obl-adv) - (\^obl) - (\^arg2-lvc)(NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-1 LEFT_NP_BOUNDARY)(NONE p ALLPOS);
 SETPARENT (PRON) - (\^arg1) - (\^arg2) - (\^obl-arg) - (\^obl-adv) - (\^obl) - (\^arg2-lvc)(NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-2< (PUNCT))(NONE p ALLPOS);
-MAP (@nmod:pro) TARGET (PRON)(p Head_NOUN);
+MAP (@nmod-pro) TARGET (PRON)(p Head_NOUN);
 
 #determiners
 SETPARENT (DET) - (\^arg1) - (\^arg2) - (\^obl-arg) - (\^obl-adv) - (\^obl) - (\^arg2-lvc)(NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-1 LEFT_NP_BOUNDARY)(NONE p ALLPOS);
@@ -1952,7 +1952,7 @@ MAP (@neg) TARGET (NEG)(p (VERB));
 
 #final sentence suffix + imp
 SETPARENT (PART) + (Mood=Ind) OR (Mood=Imp)(NONE p ALLPOS) TO (-1* (VERB))(NONE p ALLPOS);
-MAP (@aux:fin) TARGET (PART) + (Mood=Ind) OR (Mood=Imp)(p (VERB));
+MAP (@aux-fin) TARGET (PART) + (Mood=Ind) OR (Mood=Imp)(p (VERB));
 
 #'ang / ni after NP
 
