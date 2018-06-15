@@ -1,4 +1,4 @@
-# Sentence delimiters
+﻿# Sentence delimiters
 DELIMITERS = "<།>";
 
 LIST ALLPOS = ADJ ADP ADV AUX DET INTJ NOUN NUM PART PRON PROPN PUNCT SCONJ VERB X;
@@ -28,7 +28,7 @@ SET np.elem = (NOUN) OR (ADJ) OR (NUM) OR (PROPN) OR (DET) OR (PRON) OR (VerbFor
 
 SET excl.agn = (Case=*) - (Case=Agn);
 
-SET LEFT_NP_BOUNDARY = (VERB) OR (ADP) OR (PUNCT) OR (SCONJ) OR (PART) OR (ADV);
+SET LEFT_NP_BOUNDARY = (VERB) OR (ADP) OR (PUNCT) OR (SCONJ) OR (PART) OR (ADV) OR (AUX);
 SET RIGHT_NP_BOUNDARY = (ADP) OR (PUNCT) OR (SCONJ) OR (Polarity=Neg);
 
 SET Head_NOUN = (NOUN) OR (NUM) OR (PROPN) OR (PRON) OR (DET) OR (VerbForm=Vnoun);
@@ -36,7 +36,7 @@ SET Head_NOUN = (NOUN) OR (NUM) OR (PROPN) OR (PRON) OR (DET) OR (VerbForm=Vnoun
 LIST TAGS = \^arg1 \^arg2 \^arg2-hon \^arg2-lvc \^arg3 \^argcl \^aux \^aux-lvc \^cop \^obl \^obl-adv \^obl-arg;
 
 #DEPENDENCY RULES
-# First rules for NP elements, second rules for ADP, PART, SCONJ - in this way I can link ADP as ex to the Head Noun because the other elements will have already a dependency - putting in SETPARENT... TO (NONE P ALLPOS). The (NONE p ALLPOS) condition allows me to jump NP elements thet have already The Head Noun as a parent.
+# First rules for NP elements, second rules for ADP, PART, SCONJ - in this way I can link ADP as ex to the Head Noun because the other elements will have already a dependency - putting in SETPARENT... TO (NONE P ALLPOS - TAGS). The (NONE p ALLPOS - TAGS) condition allows me to jump NP elements thet have already The Head Noun as a parent.
 
 #NP ELEMENTS:
 
@@ -56,7 +56,7 @@ MAP (@appos) TARGET (PROPN) - TAGS (p Head_NOUN);
 #check these cases
 #SETPARENT (NOUN)- (\^arg1) - (\^arg2) - (\^obl-arg) - (\^obl-adv) - (\^obl)(NONE p ALLPOS) TO (-1* Head_NOUN - (DET) BARRIER LEFT_NP_BOUNDARY OR (DET) OR (ADJ)) (-1 (\^arg1) OR (\^arg2) OR (\^obl-arg) OR (\^obl-adv) OR (\^obl));
 
-SETPARENT (NOUN) TO (-1* Head_NOUN - (DET) BARRIER LEFT_NP_BOUNDARY OR (DET) OR (ADJ) OR (NUM))(-1 LEFT_NP_BOUNDARY)(NONE p ALLPOS);
+SETPARENT (NOUN) TO (-1* Head_NOUN - (DET) BARRIER LEFT_NP_BOUNDARY OR (DET) OR (ADJ) OR (NUM))(-1 LEFT_NP_BOUNDARY)(NONE p ALLPOS - TAGS);
 SETPARENT (NOUN) (NONE p ALLPOS) TO (-1* Head_NOUN - (DET) BARRIER LEFT_NP_BOUNDARY OR (DET) OR (ADJ) OR (NUM))(-2< (PUNCT));
 MAP (@appos) TARGET (NOUN) - TAGS (p Head_NOUN);
 
@@ -66,24 +66,43 @@ SETPARENT Head_NOUN (1 ("<དང་>"))(NONE p ALLPOS) TO (2 Head_NOUN);
 MAP (@conj) TARGET Head_NOUN - TAGS (1 ("<དང་>"))(p Head_NOUN);
 
 #adjectives
-SETPARENT (ADJ) (NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(NONE p ALLPOS);
+
+#adjectives
+#SETPARENT (ADJ) (NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-1 LEFT_NP_BOUNDARY)(NONE p ALLPOS - TAGS);
+#SETPARENT (ADJ) (NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-2< (PUNCT));
+#MAP (@amod) TARGET (ADJ) - TAGS (p Head_NOUN);
+
+#possible alternative formulation to deal with cases N + N(arg)+ ADJ - to make the ADJ pointing to the arg instead of the first N
+SETPARENT (ADJ) (NONE p ALLPOS) TO (-1* Head_NOUN + TAGS BARRIER LEFT_NP_BOUNDARY);
+SETPARENT (ADJ) (NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-1 LEFT_NP_BOUNDARY);
 SETPARENT (ADJ) (NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-2< (PUNCT));
 MAP (@amod) TARGET (ADJ) - TAGS (p Head_NOUN);
 
 #numerals
-SETPARENT (NUM) (NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-1 LEFT_NP_BOUNDARY)(NONE p ALLPOS);
-SETPARENT (NUM) (NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-2< (PUNCT))(NONE p ALLPOS);
+#SETPARENT (NUM) (NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-1 LEFT_NP_BOUNDARY)(NONE p ALLPOS - TAGS);
+#SETPARENT (NUM) (NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-2< (PUNCT))(NONE p ALLPOS - TAGS);
+#MAP (@nummod)TARGET (NUM) - TAGS (p Head_NOUN);
+
+SETPARENT (NUM) (NONE p ALLPOS) TO (-1* Head_NOUN + TAGS BARRIER LEFT_NP_BOUNDARY);
+SETPARENT (NUM) (NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-1 LEFT_NP_BOUNDARY);
+SETPARENT (NUM) (NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-2< (PUNCT))(NONE p ALLPOS - TAGS);
 MAP (@nummod)TARGET (NUM) - TAGS (p Head_NOUN);
 
 #pronouns
-#SETPARENT (PRON) (NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-1 LEFT_NP_BOUNDARY)(NONE p ALLPOS);
-#SETPARENT (PRON) (NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-2< (PUNCT))(NONE p ALLPOS);
+#SETPARENT (PRON) (NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-1 LEFT_NP_BOUNDARY)(NONE p ALLPOS - TAGS);
+#SETPARENT (PRON) (NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-2< (PUNCT))(NONE p ALLPOS - TAGS);
 #MAP (@nmod-pro) TARGET (PRON) - TAGS (p Head_NOUN);
 
 #determiners
-SETPARENT (DET) (NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-1 LEFT_NP_BOUNDARY)(NONE p ALLPOS);
-SETPARENT (DET) (NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-2< (PUNCT))(NONE p ALLPOS);
-MAP (@det) TARGET (DET) - TAGS (p Head_NOUN);
+#SETPARENT (DET) (NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-1 LEFT_NP_BOUNDARY);
+#SETPARENT (DET) (NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-2< (PUNCT))(NONE p ALLPOS - TAGS);
+#MAP (@det) TARGET (DET) - TAGS (p Head_NOUN);
+
+SETPARENT (DET) (NONE p ALLPOS) TO (-1* Head_NOUN + TAGS BARRIER LEFT_NP_BOUNDARY);
+SETPARENT (DET) (NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-1 LEFT_NP_BOUNDARY);
+SETPARENT (DET) (NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-2< (PUNCT))(NONE p ALLPOS - TAGS);
+MAP (@det)TARGET (NUM) - TAGS (p Head_NOUN);
+
 
 #----------PART-------------------------------------------------------------
 
@@ -96,7 +115,7 @@ SETPARENT (PART) + (Polarity=Neg)(NONE p ALLPOS) TO (1* (VERB) OR (AUX));
 MAP (@neg) TARGET (PART) + (Polarity=Neg)(p (VERB) OR (AUX));
 
 #final sentence suffix + imp
-SETPARENT (PART) + (Mood=Ind) OR (PART) + (Mood=Imp)(NONE p ALLPOS) TO (-1* (VERB))(NONE p ALLPOS);
+SETPARENT (PART) + (Mood=Ind) OR (PART) + (Mood=Imp)(NONE p ALLPOS) TO (-1* (VERB))(NONE p ALLPOS - TAGS);
 MAP (@aux-fin) TARGET (PART) + (Mood=Ind) OR (PART) + (Mood=Imp)(p (VERB));
 
 #'ang / ni after NP
@@ -104,12 +123,13 @@ MAP (@aux-fin) TARGET (PART) + (Mood=Ind) OR (PART) + (Mood=Imp)(p (VERB));
 #Cases where the PART follows the CASE after the NP - Rgyal-po-chen-pos[agn]-ni
 SETPARENT (PART) (NONE p ALLPOS)(-1 (ADP)) TO (-1* Head_NOUN)(-1 LEFT_NP_BOUNDARY);
 
+SETPARENT (PART) (NONE p ALLPOS) TO (-1* Head_NOUN + TAGS BARRIER LEFT_NP_BOUNDARY);
 SETPARENT (PART) (NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-1 LEFT_NP_BOUNDARY);
 SETPARENT (PART) (NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-2< (PUNCT));
 MAP (@case) TARGET (PART) - TAGS (p (VERB));
 
 #'ang after verbs as coordinative
-SETPARENT (PART) (NONE p ALLPOS) TO (-1* (VERB))(NONE p ALLPOS);
+SETPARENT (PART) (NONE p ALLPOS) TO (-1* (VERB))(NONE p ALLPOS - TAGS);
 MAP (@mark) TARGET (PART) - TAGS (p (VERB));
 
 #-------------ADP------------------------------------------------------------
@@ -140,6 +160,7 @@ SETPARENT (Case=Ter)(NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(
 
 
 #general rule
+SETPARENT (ADP) (NONE p ALLPOS) TO (-1* Head_NOUN + TAGS BARRIER LEFT_NP_BOUNDARY);
 SETPARENT (ADP)(NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-1 LEFT_NP_BOUNDARY);
 SETPARENT (ADP)(NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-2< (PUNCT));
 
@@ -153,24 +174,24 @@ MAP (@case) TARGET (ADP) - TAGS (p Head_NOUN);
 SETPARENT (SCONJ)(NONE p ALLPOS) TO (-1 (ADV));
 MAP (@fixed) TARGET (SCONJ) - TAGS (p (ADV));
 
-SETPARENT (SCONJ)(NONE p ALLPOS) TO (-1 (AUX))(NOT -2 (VERB))(NONE p ALLPOS);
-SETPARENT (SCONJ)(NONE p ALLPOS) TO (-1* (VERB))(NONE p ALLPOS);
+SETPARENT (SCONJ)(NONE p ALLPOS) TO (-1 (AUX))(NOT -2 (VERB))(NONE p ALLPOS - TAGS);
+SETPARENT (SCONJ)(NONE p ALLPOS) TO (-1* (VERB))(NONE p ALLPOS - TAGS);
 
 #converbs
 MAP (@mark) TARGET (SCONJ) - TAGS (p (VERB));
 
 
 #------------ADV-----------------------------------------------------------------
-#Insert (NONE p ALLPOS) to link the ADV to the root verb - with no parents
+#Insert (NONE p ALLPOS - TAGS) to link the ADV to the root verb - with no parents
 
-SETPARENT (ADV) TO (1* (VERB))(NONE p ALLPOS);
+SETPARENT (ADV) TO (1* (VERB))(NONE p ALLPOS - TAGS);
 MAP (@advmod) TARGET (ADV) - TAGS (p (VERB));
 
 
 #------------PUNCT----------------------------------------------------------------
-#better to indicate an interval to the left of PUNCT? Insert (NONE p ALLPOS) to link the PUNCT to the root verb - with no parents
+#better to indicate an interval to the left of PUNCT? Insert (NONE p ALLPOS - TAGS) to link the PUNCT to the root verb - with no parents
 
-SETPARENT (PUNCT) TO (-1* (VERB))(NONE p ALLPOS);
+SETPARENT (PUNCT) TO (-1* (VERB))(NONE p ALLPOS - TAGS);
 MAP (@punct) TARGET (PUNCT) - TAGS (p (VERB));
 
 
