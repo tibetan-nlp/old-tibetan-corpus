@@ -101,7 +101,7 @@ MAP (@nummod)TARGET (NUM) - TAGS (p Head_NOUN);
 SETPARENT (DET) (NONE p ALLPOS) TO (-1* Head_NOUN + TAGS BARRIER LEFT_NP_BOUNDARY);
 SETPARENT (DET) (NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-1 LEFT_NP_BOUNDARY);
 SETPARENT (DET) (NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-2< (PUNCT))(NONE p ALLPOS - TAGS);
-MAP (@det)TARGET (DET) - TAGS (p Head_NOUN);
+MAP (@det) TARGET (DET) - TAGS (p Head_NOUN);
 
 
 #----------PART-------------------------------------------------------------
