@@ -46,18 +46,21 @@ LIST TAGS = \^arg1 \^arg2 \^arg2-hon \^arg2-lvc \^arg3 \^argcl \^aux \^aux-lvc \
 #rule to solve line 86
 SETPARENT (PROPN) (NONE p ALLPOS) TO (-1* Head_NOUN - (DET) BARRIER LEFT_NP_BOUNDARY OR (DET) OR (ADJ) OR (NUM)) (-1 TAGS);
 
-SETPARENT (PROPN) (NONE p ALLPOS) TO (-1* Head_NOUN - (DET) BARRIER LEFT_NP_BOUNDARY OR (DET) OR (ADJ) OR (NUM))(-1 LEFT_NP_BOUNDARY);
-SETPARENT (PROPN) (NONE p ALLPOS) TO (-1* Head_NOUN - (DET) BARRIER LEFT_NP_BOUNDARY OR (DET) OR (ADJ) OR (NUM))(-2< (PUNCT));
+#NOUN and PROPN as adpositions. Added (NOT 1 (Case=Gen/Com)) to avoid cases like: N + N + Gen/Com + N - In this case the second NOUN is a nmod and not an adposition. Check in results with NOUN.*:59.*\r\n.*\r\n.*ADP if we need to exclude Ter as well. For the explanation of this set of rules see the adjectives section.
+
+
+SETPARENT (PROPN) - TAGS (NONE p ALLPOS) (NOT 1 (Case=Gen) OR (Case=Com)) TO (-1* Head_NOUN + TAGS - (DET) BARRIER LEFT_NP_BOUNDARY OR (DET) OR (ADJ) OR (NUM));
+SETPARENT (PROPN) - TAGS (NONE p ALLPOS) (NOT 1 (Case=Gen) OR (Case=Com)) TO (-1* Head_NOUN - (DET) BARRIER LEFT_NP_BOUNDARY OR (DET) OR (ADJ) OR (NUM))(-1 LEFT_NP_BOUNDARY);
+SETPARENT (PROPN) - TAGS  (NONE p ALLPOS)(NOT 1 (Case=Gen) OR (Case=Com))(NONE p ALLPOS) TO (-1* Head_NOUN - (DET) BARRIER LEFT_NP_BOUNDARY OR (DET) OR (ADJ) OR (NUM))(-2< (PUNCT));
 MAP (@appos) TARGET (PROPN) - TAGS (p Head_NOUN);
 
-
-#Noun as adposition. Added (NOT 1 (Case=Gen/Com)) to avoid cases like: N + N + Gen/Com + N - In this case the second NOUN is a nmod and not an adposition. Check in results with NOUN.*:59.*\r\n.*\r\n.*ADP if we need to exclude Ter as well.
 
 #check these cases not included at the moment
 #SETPARENT (NOUN)- (\^arg1) - (\^arg2) - (\^obl-arg) - (\^obl-adv) - (\^obl)(NONE p ALLPOS) TO (-1* Head_NOUN - (DET) BARRIER LEFT_NP_BOUNDARY OR (DET) OR (ADJ)) (-1 (\^arg1) OR (\^arg2) OR (\^obl-arg) OR (\^obl-adv) OR (\^obl));
 
-SETPARENT (NOUN) - TAGS (NOT 1 (Case=Gen) OR (Case=Com)) TO (-1* Head_NOUN - (DET) BARRIER LEFT_NP_BOUNDARY OR (DET) OR (ADJ) OR (NUM))(-1 LEFT_NP_BOUNDARY)(NONE p ALLPOS - TAGS);
-SETPARENT (NOUN) - TAGS (NOT 1 (Case=Gen) OR (Case=Com))(NONE p ALLPOS) TO (-1* Head_NOUN - (DET) BARRIER LEFT_NP_BOUNDARY OR (DET) OR (ADJ) OR (NUM))(-2< (PUNCT));
+SETPARENT (NOUN) - TAGS (NONE p ALLPOS) (NOT 1 (Case=Gen) OR (Case=Com)) TO (-1* Head_NOUN + TAGS - (DET) BARRIER LEFT_NP_BOUNDARY OR (DET) OR (ADJ) OR (NUM));
+SETPARENT (NOUN) - TAGS (NONE p ALLPOS) (NOT 1 (Case=Gen) OR (Case=Com)) TO (-1* Head_NOUN - (DET) BARRIER LEFT_NP_BOUNDARY OR (DET) OR (ADJ) OR (NUM))(-1 LEFT_NP_BOUNDARY);
+SETPARENT (NOUN) - TAGS  (NONE p ALLPOS)(NOT 1 (Case=Gen) OR (Case=Com))(NONE p ALLPOS) TO (-1* Head_NOUN - (DET) BARRIER LEFT_NP_BOUNDARY OR (DET) OR (ADJ) OR (NUM))(-2< (PUNCT));
 MAP (@appos) TARGET (NOUN) - TAGS (p Head_NOUN);
 
 #Nouns (without arg labels) + dang 
@@ -68,7 +71,7 @@ MAP (@conj) TARGET (NOUN) - TAGS (1 ("<དང་>"))(p Head_NOUN);
 #adjectives
 
 #adjectives (I am also taking into account cases of ADJ as head nouns)
-#the first rule deals with cases N + N(arg)+ ADJ - to create a parental relation between ADJ and the second NOUN. The second rule deals with all other cases - the condition (-1 LEFT_NP_BOUNDARY) forces to create a parental relation between the ADJ and the leftmost element of the NP. Example: N + N + DET + ADJ - the rule will not stop to DET but will point to the first noun. The third rule deals with NP at the beginning of a section. The same set of rules applies for NUM, DET and ADP.
+#the first rule deals with cases N + N(arg)+ ADJ - to create a parental relation between ADJ and the second NOUN. The second rule deals with all other cases - the condition (-1 LEFT_NP_BOUNDARY) forces to create a parental relation between the ADJ and the leftmost element of the NP. Example: N + N + DET + ADJ - the rule will not stop to DET but will point to the first noun. The third rule deals with NP at the beginning of a section. The same set of rules applies for NOUN and PROPN as adpositions NUM, DET and ADP.
 SETPARENT (ADJ) (NONE p ALLPOS) TO (-1* Head_NOUN + TAGS OR (ADJ) + TAGS BARRIER LEFT_NP_BOUNDARY);
 SETPARENT (ADJ) (NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-1 LEFT_NP_BOUNDARY);
 SETPARENT (ADJ) (NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-2< (PUNCT));
