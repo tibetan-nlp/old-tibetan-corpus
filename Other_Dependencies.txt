@@ -126,14 +126,15 @@ MAP (@mark) TARGET (PART) - TAGS (p (VERB));
 
 #better to apply the rule for specific cases first - the general rule is the last one.
 
-#dang - associative
-
-SETPARENT (Case=Com)(NOT 1 (PUNCT))(NONE p ALLPOS) TO (-1 Head_NOUN);
-MAP (@cc) TARGET (Case=Com)(NOT 1 (PUNCT))(p Head_NOUN);
+#dang - associative: VN + dang + PUNCT @mark; N + VN + Gen @case; all other cases @cc
 
 #dang - associative with VN
 SETPARENT (Case=Com)(1 (PUNCT))(NONE p ALLPOS) TO (-1 (VerbForm=Vnoun));
 MAP (@mark) TARGET (Case=Com)(1 (PUNCT))(p Head_NOUN);
+
+SETPARENT (Case=Com)(NOT 1 (PUNCT))(NOT 2 (Case=Gen))(NONE p ALLPOS) TO (-1 Head_NOUN);
+MAP (@cc) TARGET (Case=Com)(NOT 1 (PUNCT))(p Head_NOUN);
+
 
 #general rule using the oblique tags
 
