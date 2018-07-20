@@ -19,6 +19,7 @@ LIST @nummod = @nummod;
 LIST @nmod-pro = @nmod-pro;
 LIST @conj = @conj;
 LIST @cc = @cc;
+LIST @obl-adv = @obl-adv;
 
 LIST >>> = >>> ;
 LIST <<< = <<< ;
@@ -33,9 +34,10 @@ SET RIGHT_NP_BOUNDARY = (ADP) OR (PUNCT) OR (SCONJ) OR (Polarity=Neg);
 
 SET Head_NOUN = (NOUN) OR (NUM) OR (PROPN) OR (PRON) OR (DET) OR (VerbForm=Vnoun);
 
-LIST TAGS = \^arg1 \^arg2 \^arg2-hon \^arg2-lvc \^arg3 \^argcl \^aux \^aux-lvc \^cop \^obl \^obl-adv \^obl-arg;
+LIST TAGS = \^arg1 \^arg2 \^arg2-hon \^arg2-lvc \^arg3 \^argcl \^aux \^aux-lvc \^cop \^obl \^obl-adv \^obl-arg \^aux-redup;
 
 #DEPENDENCY RULES
+
 # First set of rules for NP elements,  second set of rules for ADP, PART, SCONJ and so on - in this way I can link ADP to the Head Noun because the other elements will have already a dependency - putting in SETPARENT... TO (NONE P ALLPOS - TAGS). The (NONE p ALLPOS - TAGS) condition allows me to jump NP elements thet have already The Head Noun as a parent.
 
 #NP ELEMENTS:
@@ -43,10 +45,12 @@ LIST TAGS = \^arg1 \^arg2 \^arg2-hon \^arg2-lvc \^arg3 \^argcl \^aux \^aux-lvc \
 #propn as adposition
 # added condition OR (DET) OR (ADJ) OR (NUM) in the two following rules at the end in order to avoid crossing of nps: NOUN + DET/NUM/ADJ + NOUN + CASE.
 
-#rule to solve line 86
-SETPARENT (PROPN) (NONE p ALLPOS) TO (-1* Head_NOUN - (DET) BARRIER LEFT_NP_BOUNDARY OR (DET) OR (ADJ) OR (NUM)) (-1 TAGS);
 
-#NOUN and PROPN as adpositions. Added (NOT 1 (Case=Gen/Com)) to avoid cases like: N + N + Gen/Com + N - In this case the second NOUN is a nmod and not an adposition. Check in results with NOUN.*:59.*\r\n.*\r\n.*ADP if we need to exclude Ter as well. For the explanation of this set of rules see the adjectives section.
+#NOUN and PROPN as adpositions. Added (NOT 1* (Case=Gen/Com/Ter)) to avoid cases like: N + N + Gen/Com/Ter + N - In this case the second NOUN is a nmod (or a obl-adv in the case of Ter) and not an adposition. For the explanation of this set of rules see the adjectives section.
+
+#cases NOUN - TAGS + PROPN: in this case most likely is the NOUN @appos to PROPN - I need this dependency before the rules for the PROPN as @appos
+SETPARENT (NOUN) - TAGS (NONE p ALLPOS) TO (1 (PROPN));
+MAP (@appos) TARGET (NOUN)(p (PROPN));
 
 
 SETPARENT (PROPN) - TAGS (NONE p ALLPOS) (NOT 1 (Case=Gen) OR (Case=Com)) TO (-1* Head_NOUN + TAGS - (DET) BARRIER LEFT_NP_BOUNDARY OR (DET) OR (ADJ) OR (NUM));
@@ -56,12 +60,26 @@ MAP (@appos) TARGET (PROPN) - TAGS (p Head_NOUN);
 
 
 #check these cases not included at the moment
-#SETPARENT (NOUN)- (\^arg1) - (\^arg2) - (\^obl-arg) - (\^obl-adv) - (\^obl)(NONE p ALLPOS) TO (-1* Head_NOUN - (DET) BARRIER LEFT_NP_BOUNDARY OR (DET) OR (ADJ)) (-1 (\^arg1) OR (\^arg2) OR (\^obl-arg) OR (\^obl-adv) OR (\^obl));
+#SETPARENT ((NOUN)- TAGS)(NONE p ALLPOS) TO (-1* Head_NOUN - (DET) BARRIER LEFT_NP_BOUNDARY OR (DET) OR (ADJ)) (-1 TAGS);
 
-SETPARENT (NOUN) - TAGS (NONE p ALLPOS) (NOT 1 (Case=Gen) OR (Case=Com)) TO (-1* Head_NOUN + TAGS - (DET) BARRIER LEFT_NP_BOUNDARY OR (DET) OR (ADJ) OR (NUM));
-SETPARENT (NOUN) - TAGS (NONE p ALLPOS) (NOT 1 (Case=Gen) OR (Case=Com)) TO (-1* Head_NOUN - (DET) BARRIER LEFT_NP_BOUNDARY OR (DET) OR (ADJ) OR (NUM))(-1 LEFT_NP_BOUNDARY);
-SETPARENT (NOUN) - TAGS  (NONE p ALLPOS)(NOT 1 (Case=Gen) OR (Case=Com))(NONE p ALLPOS) TO (-1* Head_NOUN - (DET) BARRIER LEFT_NP_BOUNDARY OR (DET) OR (ADJ) OR (NUM))(-2< (PUNCT));
+#An additional set of rules has been introduced before the rules for @appos for NOUNS: this set of rules deals with cases as N(arg) + N + N(optional) + Ter. These are adverbial expressions as bzhin-du or yid-bzhin-du where the noun has not been tagged as ^obl-adv by the annotators (it's not relevant for the argument structures of the verb). This missed ones have been automatically tagged with a set of three rules - one rule for cases as N(arg) + N + N + Ter (I'm also excluding with (NOT -1 (NOUN) the linking of the second noun to the verb (it will treated in the following rules as @appos), a second  rule for cases N + Ter with a left NP boundary element in position -1. The condition (NOT 1 Head_NOUN + TAGS) has been added to avoid cases N + N(TAGS) + Ter to be tagged as @obl-adv. This cases can be fixed with an @appos tag.
+
+SETPARENT (NOUN) - TAGS (NOT 1 Head_NOUN + TAGS) (1* (Case=Ter) BARRIER (ADP))(-1* Head_NOUN + TAGS - (DET) BARRIER LEFT_NP_BOUNDARY OR (DET) OR (ADJ) OR (NUM))(NOT -1 (NOUN))(NONE p ALLPOS) TO (1* (VERB));
+SETPARENT (NOUN) - TAGS (NOT 1 Head_NOUN + TAGS) (1* (Case=Ter) BARRIER (ADP))(-1 LEFT_NP_BOUNDARY OR (DET) OR (ADJ) OR (NUM))(NONE p ALLPOS) TO (1* (VERB));
+MAP (@obl-adv) TARGET Head_NOUN - TAGS (p (VERB));
+
+
+#subcases: N(@obl-adv) + N + Ter: the second NOUN is @appos to the first one.
+SETPARENT (NOUN)(NONE p ALLPOS) TO (-1 (NOUN) + (@obl-adv));
+MAP (@appos) TARGET (NOUN) (-1 (NOUN)) (p (NOUN) + (@obl-adv));
+
+
+SETPARENT (NOUN) - TAGS (NONE p ALLPOS) (NOT 1* (Case=Gen) OR (Case=Com) OR (Case=Ter)) TO (-1* Head_NOUN + TAGS OR (@obl-arg) - (DET) BARRIER LEFT_NP_BOUNDARY OR (DET) OR (ADJ) OR (NUM));
+SETPARENT (NOUN) - TAGS (NONE p ALLPOS) (NOT 1* (Case=Gen) OR (Case=Com) OR (Case=Ter)) TO (-1* Head_NOUN - (DET) BARRIER LEFT_NP_BOUNDARY OR (DET) OR (ADJ) OR (NUM))(-1 LEFT_NP_BOUNDARY);
+SETPARENT (NOUN) - TAGS  (NONE p ALLPOS)(NOT 1* (Case=Gen) OR (Case=Com) OR (Case=Ter))(NONE p ALLPOS) TO (-1* Head_NOUN - (DET) BARRIER LEFT_NP_BOUNDARY OR (DET) OR (ADJ) OR (NUM))(-2< (PUNCT));
 MAP (@appos) TARGET (NOUN) - TAGS (p Head_NOUN);
+
+
 
 #Nouns (without arg labels) + dang 
 
@@ -150,16 +168,31 @@ SETPARENT (Case=Gen)(NONE p ALLPOS) TO (-1 (PRON));
 #genitive - for nested clauses:  include cases N (arg) + N + .... + Gen - where the parental relation is within the second N and Gen
 SETPARENT (Case=Gen)(NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-1 LEFT_NP_BOUNDARY OR (\^arg1) OR (\^arg2) OR (\^obl-arg) OR (\^obl-adv));
 
+# all other cases with Genitive 
+SETPARENT (Case=Gen)(NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY);
+
 #terminative - for nested clauses: include cases N (arg1) + N +...+ Ter where the parental relation is between the second N and Ter (in these cases the second N does not have any ^obl tag)
 SETPARENT (Case=Ter)(NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-1 LEFT_NP_BOUNDARY OR (\^arg1) OR (\^arg2));
 
+# all other cases with Terminative 
+SETPARENT (Case=Ter)(NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY);
 
-#general rule
+# ADV+ADP
+SETPARENT (ADP) (NONE p ALLPOS) TO (-1 (ADV));
+
+#ADV+ADP+ADP setparetn ADP with an ADV that is preceeded by another ADP in position -1 in respect to the first ADP
+SETPARENT (ADP) (NONE p ALLPOS) TO (-1 (ADP) LINK -1 (ADV));
+
+#NOUN+ADP+ADP
+SETPARENT (ADP) (NONE p ALLPOS) TO (-1 (ADP) LINK -1 (NOUN));
+
+
+#general rule: 
 SETPARENT (ADP) (NONE p ALLPOS) TO (-1* Head_NOUN + TAGS BARRIER LEFT_NP_BOUNDARY);
 SETPARENT (ADP)(NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-1 LEFT_NP_BOUNDARY);
 SETPARENT (ADP)(NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-2< (PUNCT));
 
-MAP (@case) TARGET (ADP) - TAGS (p Head_NOUN);
+MAP (@case) TARGET (ADP) - TAGS (p Head_NOUN OR (ADV));
 
 
 #------------SCONJ---------------------------------------------------------------
@@ -195,8 +228,11 @@ MAP (@punct) TARGET (PUNCT) - TAGS (p (VERB));
 SETPARENT Head_NOUN - TAGS (NONE p ALLPOS) TO (1* Head_NOUN BARRIER LEFT_NP_BOUNDARY - (Case=Gen) OR TAGS)(-1 (Case=Gen));
 MAP (@nmod) TARGET Head_NOUN - TAGS (p Head_NOUN);
 
+#Cases Head_NOUN (@nmod) + Head_NOUN + Gen
+SETPARENT Head_NOUN - TAGS (NONE p ALLPOS) TO (-1 Head_NOUN + (@nmod));
+MAP (@appos) TARGET Head_NOUN - TAGS (-1 Head_NOUN) (p Head_NOUN + (@nmod));
 
-#cases as NOUN + TER, "<ལྟ>" + "<ར་>" have not been tagged as oblique. In this case the NOUN is at the moment tagged as adposition by the existing rules - 5 cases in Mila.
+
 
 END
 
