@@ -1847,7 +1847,7 @@ LIST @arg1 = @arg1 ;
 LIST @arg2 = @arg2 ;
 LIST @obl = @obl ;
 LIST @argcl = @argcl;
-LIST @obl.arg =  @obl.arg;
+LIST @obl-arg =  @obl-arg;
 LIST @obl-adv = @obl-adv;
 LIST @aux = @aux;
 
@@ -1899,7 +1899,7 @@ MAP(@obl-adv) TARGET ("<ཡོངས་>")(1 ("<སུ་>"))(p (VERB))(NEGATE s
 #OBL.ARG
 
 SETPARENT Head_NOUN (1 ("<དང་>")) TO (2 (VERB));
-MAP(@obl.arg) TARGET Head_NOUN (1 ("<དང་>"))(p (VERB));
+MAP(@obl-arg) TARGET Head_NOUN (1 ("<དང་>"))(p (VERB));
 
 #ARGCL
 
@@ -2003,11 +2003,11 @@ SUBSTITUTE (@arg1) (@arg2) TARGET Head_NOUN + (@arg1) (p (VERB) + (§vol) - (§a
 
 #SWITCHING ARG1 TO ARG2 FOR EXISTENTIONAL VERBS + VN
 SUBSTITUTE (@arg1) (@arg2) TARGET (VerbForm=Vnoun) + (@arg1) (p (VERB) + ("<མེད་>") OR ("<མེད་པ་>") OR ("<ཡོད་>") OR ("<ཡོད་པ་>"))(-1 LEFT_NP_BOUNDARY)( 1 (ADJ) OR (NUM) OR (DET) OR (PART));
-SUBSTITUTE (@obl) (@obl:arg) TARGET (VerbForm=Vnoun) + (@arg1) (p (VERB)+ ("<མེད་>") OR ("<མེད་པ་>") OR ("<ཡོད་>") OR ("<ཡོད་པ་>"))(-1 LEFT_NP_BOUNDARY)( 1 (ADJ) OR (NUM) OR (DET) OR (PART));
+SUBSTITUTE (@obl) (@obl-arg) TARGET (VerbForm=Vnoun) + (@arg1) (p (VERB)+ ("<མེད་>") OR ("<མེད་པ་>") OR ("<ཡོད་>") OR ("<ཡོད་པ་>"))(-1 LEFT_NP_BOUNDARY)( 1 (ADJ) OR (NUM) OR (DET) OR (PART));
 
 #SWITCHING ARG1 TO ARG2 FOR EXISTENTIONAL VERBS
 SUBSTITUTE (@arg1) (@arg2) TARGET Head_NOUN + (@arg1) (p (VERB) + ("<མེད་>") OR ("<མེད་པ་>") OR ("<ཡོད་>") OR ("<ཡོད་པ་>"));
-SUBSTITUTE (@obl) (@obl:arg) TARGET Head_NOUN + (@arg1) (p (VERB)+ ("<མེད་>") OR ("<མེད་པ་>") OR ("<ཡོད་>") OR ("<ཡོད་པ་>"));
+SUBSTITUTE (@obl) (@obl-arg) TARGET Head_NOUN + (@arg1) (p (VERB)+ ("<མེད་>") OR ("<མེད་པ་>") OR ("<ཡོད་>") OR ("<ཡོད་པ་>"));
 
 #REMOVE ARG TAGS ON THE LEFT OF GENITIVE + VN
 SUBSTITUTE (@arg1)(*) TARGET (VerbForm=Vnoun) + (@arg1)(-1 LEFT_NP_BOUNDARY)( 1 (ADJ) OR (NUM) OR (DET) OR (PART))(2 (Case=Gen))(p (VERB));
