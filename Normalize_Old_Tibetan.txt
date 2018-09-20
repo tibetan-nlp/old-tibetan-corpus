@@ -1,4 +1,5 @@
-# Sentence delimiters
+# sentence delimiters
 DELIMITERS = "<།>";
 
-
+# replaces reverse gigu with gigu everywhere
+APPEND ("$1ི$2"v σ ↑CT) TARGET ("<(.*)\\u0F80(.*)>"r) ;
