@@ -1,0 +1,4 @@
+# Sentence delimiters
+DELIMITERS = "<།>";
+
+
