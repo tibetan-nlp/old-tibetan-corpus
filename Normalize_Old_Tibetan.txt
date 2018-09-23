@@ -1,5 +1,181 @@
 # sentence delimiters
 DELIMITERS = "<།>";
 
-# replaces reverse gigu with gigu everywhere
-APPEND ("$1ི$2"v σ ↑CT) TARGET ("<(.*)\\u0F80(.*)>"r) ;
+# Replacing ོེ་ with ོའི་
+# Background: In some cases, in Old Tibetan ortography the diphthong  ོེ་  is used instead of the genitive case marker འི་ after the vowel  ོ. For example: བཙན་པོེ་ instead of བཙན་པོའི་
+# Rule: Replace ོེ་ with  ོའི་ everywhere.
+SUBSTITUTE ("(.*)ོེ་"r) ("$1ོའི་"v) TARGET (σ);
+
+# Reverse Gigu:
+# Background: In Old Tibetan texts there are many cases of reverse gigu - such as ཀྱྀ. These two forms of "gigu" are phonetically indistinguishable and mark no difference in Classical Tibetan.
+# Rule: Replace the "reverse gigu" with gigu everywhere.
+SUBSTITUTE ("([^<]*)\\u0F80(.*)"r) ("$1ི$2"v) TARGET (σ);
+
+# Merged Syllables (String replacement rule with exceptions)
+# Background: Traditionally in Classical Tibetan, syllables are separated by a tsheg. In Old Tibetan texts, syllable margins are not so clear and often a syllable (verb, noun and so on) is merged together with the following case marker or converb. For example: སྟགི > སྟག་གི,  དུསུ > དུས་སུ,  བཀུམོ > བཀུམ་མོ.  There is also a case where the prefix la- is merged with the following syllable:   ལསྩོགསྟེ > ལ་སྩོགས་ཏེ,  ལསྩོགས་ཏེ > ལ་སྩོགས་ཏེ. It is possible to split the syllables using three regular # expressions but first we need a string replacement rule to exclude some exceptions.
+# Rule: Make the following string replacements:
+SPLITCOHORT (
+  "<བགྱི>" "བགྱིས་" σ
+  "<སྣ$1>"v "ན$1"v σ
+) ("<བགྱིསྣ(་?)>"r);
+SPLITCOHORT (
+  "<རབ༹>" "རབ༹་" σ
+  "<ལ$1>"v "ལ$1"v σ
+) ("<རབ༹ལ(་?)>"r);
+SPLITCOHORT (
+  "<མཆི>" "མཆིས་" σ
+  "<སྣ$1>"v "ན$1"v σ
+) ("<མཆིསྣ(་?)>"r);
+SPLITCOHORT (
+  "<མོ>" "མོ་" σ
+  "<ལ$1>"v "ལ$1"v σ
+) ("<མོལ(་?)>"r);
+SPLITCOHORT (
+  "<ཐོག>" "ཐོགས་" σ
+  "<སླ$1>"v "ལ$1"v σ
+) ("<ཐོགསླ(་?)>"r);
+SPLITCOHORT (
+  "<ལྕེབས>" "ལྕེབས་" σ
+  "<འོ$1>"v "སོ$1"v σ
+) ("<ལྕེབསའོ(་?)>"r);
+SPLITCOHORT (
+  "<གཤེགས>" "གཤེགས་" σ
+  "<འོ$1>"v "སོ$1"v σ
+) ("<གཤེགསའོ(་?)>"r);
+SPLITCOHORT (
+  "<བཏགས>" "བཏགས་" σ
+  "<འོ$1>"v "སོ$1"v σ
+) ("<བཏགསའོ(་?)>"r);
+SPLITCOHORT (
+  "<ལ>" "ལ་" σ
+  "<སྩོགསྟེ$1>"v "སྩོགསསྟེ$1"v σ
+) ("<ལསྩོགསྟེ(་?)>"r);
+
+# Merged Syllables (Rule for cases as དྲངསྟེ > དྲངས་ཏེ)
+# Background: Traditionally in Classical Tibetan, syllables are separated by a tsheg. In Old Tibetan texts, syllable margins are not so clear and often a syllable (verb, noun and so on) is merged together with the following case marker or converb (For example: སྟགི > སྟག་གི,  དུསུ > དུས་སུ,  བཀུམོ > བཀུམ་མོ).  It is possible to split the syllables using three regular expressions - we have to apply the most specific ones first and, at the end, the generic rule.
+# Rule: Split merged syllables for cases as དྲངསྟེ > དྲངས་ཏེ apllying the following regular expression:([^aeiouI\s]+[aeiouI][^aeiouI\s]*)ste > $1s te
+SPLITCOHORT (
+  "<$1>"v "$1ས་"v σ
+  "<སྟེ$2>"v "ཏེ$2"v σ
+) ("<(.+)སྟེ(་?)>"r);
+
+# Merged Syllables (Rule for cases as གཅལྟོ > གཅལད་ཏོ)
+# Background: Traditionally in Classical Tibetan, syllables are separated by a tsheg. In Old Tibetan texts, syllable margins are not so clear and often a syllable (verb, noun and so on) is merged together with the following case marker or converb (For example: སྟགི > སྟག་གི,  དུསུ > དུས་སུ,  བཀུམོ > བཀུམ་མོ). It is possible to split the syllables using three regular expressions - we have to apply the most specific ones first and, at the end, the generic rule.
+# Rule: Split merged syllables for cases as གཅལྟོ > གཅལད་ཏོ apllying the following regular expression:([^aeiouI\s]+[aeiouI][^aeiouI\s]*)t([oe]) > $1d t$2
+SPLITCOHORT (
+  "<$1>"v "$1$3ད་"v σ
+  "<$2>"v "ཏ$4"v σ['']
+) ("<(.+)((.)\\u0F9F([\\u0F7C\\u0F7A]་?))>"r);
+
+# Merged Syllables (Generic Rule)
+# Background: Traditionally in Classical Tibetan, syllables are separated by a tsheg. In Old Tibetan texts, syllable margines are not so clear and often a syllable (verb, noun and so on) is merged together with the following case marker or converb (For example: སྟགི > སྟག་གི,  དུསུ > དུས་སུ,  བཀུམོ > བཀུམ་མོ).  It is possible to split the syllables using three regular expressions - we have to apply the most specific ones first and, at the end, the generic rule.
+# Rule: Split merged syllables apllying the following regular expression:([^aeiouI\s]+[aeiouI][^aeiouI\s]*)([^aeiouI\s'])([aeiouI][^aeiouI\s']*) > $1$2 $2$3
+
+# Note - this rule needs to be reformulated for Unicode Tibetan
+
+
+# Ma Ya Btags
+# Background: In the old orthography, a number of words based on མ had a subscribed ཡ attached. Later, these lost the ཡ.
+# Rule: Replace མྱི with མི and མྱེ with མེ everywhere.
+SUBSTITUTE ("([^<]*)མྱི(.*)"r) ("$1མི$2"v) TARGET (σ);
+SUBSTITUTE ("([^<]*)མྱེ(.*)"r) ("$1མེ$2"v) TARGET (σ);
+
+# Changing སྩ with ས
+# Background: In Old Tibetan another feature lost in Classical Tibetan, is the cluster སྩ which simplifies to ས in Classical Tibetan. We cannot replace སྩ with ས globally because, for example, "བཀ་སྩལ་པ་" still keeps the སྩ in Classical Tibetan.
+# Rule: Make the following string replacements:
+SUBSTITUTE ("གསྩན་") ("གསན་") TARGET (σ);
+SUBSTITUTE ("གསྩང་") ("གསང་") TARGET (σ);
+SUBSTITUTE ("གསྩནད་") ("གསནད་") TARGET (σ);
+SUBSTITUTE ("གསྩན་") ("གསན་") TARGET (σ);
+SUBSTITUTE ("སྩོགས་") ("སོགས་") TARGET (σ);
+SUBSTITUTE ("སྩུབ་") ("སུབ་") TARGET (σ);
+SUBSTITUTE ("སྩང་") ("སང་") TARGET (σ);
+SUBSTITUTE ("སྩངས་") ("སངས་") TARGET (σ);
+SUBSTITUTE ("གསྩུག་") ("གསུག་") TARGET (σ);
+SUBSTITUTE ("བསྩག་") ("བསག་") TARGET (σ);
+
+# 'a rten
+# Background: Old Tibetan has words that retain the a 'rten that later has been lost in classical Tibetan. As an example: "་ཡི་གེའ་" > "་ཡི་གེ་"
+# Rule: Make the following string replacements:
+SUBSTITUTE ("ཡི་གེའ(་?)"r) ("ཡི་གེ$1"v) TARGET (σ);
+SUBSTITUTE ("དུའ(་?)"r) ("དུ$1"v) TARGET (σ);
+SUBSTITUTE ("པའ(་?)"r) ("པ$1"v) TARGET (σ);
+SUBSTITUTE ("ལའ(་?)"r) ("ལ$1"v) TARGET (σ);
+SUBSTITUTE ("ནའ(་?)"r) ("ན$1"v) TARGET (σ);
+SUBSTITUTE ("སྟེའ(་?)"r) ("སྟེ$1"v) TARGET (σ);
+SUBSTITUTE ("བའ(་?)"r) ("བ$1"v) TARGET (σ);
+
+# ད / ན suffix variation
+# Background: The ད / ན suffix variation is another feature of Old Tibetan. Common forms are ཆེད་པོ་ and ཅེད་པོ་
+# Rule: Normalize (་)ཆེད་པོ་(པོའི་/པོར་/པོས་) and (་)ཅེད་པོ་(པོའི་/པོར་/པོས་) as (་)ཆེན་པོ་(པོའི་/པོར་/པོས་) and (་)ཅེན་པོ་(པོའི་/པོར་/པོས་).
+SUBSTITUTE ("ཆེད་པོ((འི|ར|ས)?་)"r) ("ཆེན་པོ$1"v) TARGET (σ);
+SUBSTITUTE ("ཅེད་པོ((འི|ར|ས)་?)"r) ("ཅེན་པོ$1"v) TARGET (σ);
+
+# Medial འ
+# Background: In Old Tibetan we can find the presence of a medial འ (lost in Classical Tibetan) within syllables as xxའས་ / xxའད་ / xxའར་.
+# Rule: Normalize to Classical Tibetan the syllables xxའས་ / xxའད་ / xxའར་ using the following regular expression: ([^aieouI\s]+a)'([srd]+)> $1$2
+SUBSTITUTE ("(.+)འ(ས|ད|ར)་"r) ("$1$2་"v) TARGET (σ);
+
+# Alternation between aspirated and unaspirated voiceless consonants
+# Background: In Old Tibetan there is an alternation between aspirated and unaspirated voiceless consonants. We can find words as ཕོ་བྲང་ and  པོ་བྲང་ with no phonetic distinction between them. This rule can not be applied globally and a string replacement rule is needed.
+# Rule: Make the following string replacements:
+SUBSTITUTE ("པོ་") ("ཕོ་") TARGET (σ) (1 ("ཉ་"));
+SUBSTITUTE ("ཕོན་") ("དཔོན་") TARGET (σ) (-1 ("དམག་"));
+SUBSTITUTE ("པྱག་") ("ཕྱག་") TARGET (σ);
+SUBSTITUTE ("པོག་") ("ཕོག་") TARGET (σ) (1 ("པ་"));
+SUBSTITUTE ("ཕོ་") ("པོ་") TARGET (σ) (1 ("བྲང་"));
+
+# Alternation between aspirated and unaspirated voiceless consonants: ཕ / ཕོ vs པ / པོ
+# Background: The phonetic distinction between the syllables ཕ / ཕོ and the syllables པ / པོ at the end of a word is neutralised and marks no distinction in Old Tibetan.
+# Rule: Change the following strings, replacing ཕ(འི/ས/ར)་ / ཕོ(འི/ས/ར)་ with པ(འི/ས/ར)་ / པོ(འི/ས/ར)་.
+SUBSTITUTE ("ཕ((འི/ས/ར)?་)"r) ("པ$2་"v) TARGET (σ) (-1 ("(སྐྱེས་|བགྱིས་|བཏབ་|སོགས་|གསོལད་)"r));
+SUBSTITUTE ("ཅེན་") ("ཆེན་") TARGET (σ) (1 ("ཕོ(འི|ས|ར)?་"r));
+SUBSTITUTE ("ཕོ((འི/ས/ར)?་)"r) ("པོ$2་"v) TARGET (σ) (-1 ("(རྒྱལ་|བློན་|བཚན་|ཆེན་|བཟང་|བདག་|བོན་|རྒན་|བཙན་|དྲག་|དམར་|མང་|མྱེས་|མྱེས་|མེས་|བསྩན་)"r));
+
+# Aspirated Voiceless Consonants
+# Background: In Tibetan, Aspirated and Unaspirated Voiceless Consonants can appear only at syllable onset. In old Tibetan aspirated and unaspiratad voiceless initials does not have a phonemic distinction.
+# Rule: At the beginning of the syllable make the following changes:
+SUBSTITUTE ("མཀ(.*)"r) ("མཁ$1"v) TARGET (σ);
+SUBSTITUTE ("མཅ(.*)"r) ("མཆ$1"v) TARGET (σ);
+SUBSTITUTE ("མཏ(.*)"r) ("མཐ$1"v) TARGET (σ);
+SUBSTITUTE ("མཙ(.*)"r) ("མཚ$1"v) TARGET (σ);
+SUBSTITUTE ("འཀ(.*)"r) ("འཁ$1"v) TARGET (σ);
+SUBSTITUTE ("འཅ(.*)"r) ("འཆ$1"v) TARGET (σ);
+SUBSTITUTE ("འཏ(.*)"r) ("འཐ$1"v) TARGET (σ);
+SUBSTITUTE ("འཔ(.*)"r) ("འཕ$1"v) TARGET (σ);
+SUBSTITUTE ("འཙ(.*)"r) ("འཚ$1"v) TARGET (σ);
+
+# Unaspirated Voiceless Consonants
+# Background: In Tibetan, Aspirated and Unaspirated Voiceless Consonants can appear only at syllable onset. In old Tibetan aspirated and unaspiratad voiceless initials does not have a phonemic distinction.
+# Rule: At the beginning of the syllable make the foll(owing changes:
+SUBSTITUTE ("དཁ(.*)"r) ("དཀ$1"v) TARGET (σ);
+SUBSTITUTE ("དཕ(.*)"r) ("དཔ$1"v) TARGET (σ);
+SUBSTITUTE ("གཆ(.*)"r) ("གཅ$1"v) TARGET (σ);
+SUBSTITUTE ("གཐ(.*)"r) ("གཏ$1"v) TARGET (σ);
+SUBSTITUTE ("གཚ(.*)"r) ("གཙ$1"v) TARGET (σ);
+SUBSTITUTE ("བཁ(.*)"r) ("བཀ$1"v) TARGET (σ);
+SUBSTITUTE ("བཆ(.*)"r) ("བཅ$1"v) TARGET (σ);
+SUBSTITUTE ("བཐ(.*)"r) ("བཏ$1"v) TARGET (σ);
+SUBSTITUTE ("བཚ(.*)"r) ("བཙ$1"v) TARGET (σ);
+SUBSTITUTE ("སྑ(.*)"r) ("སྐ$1"v) TARGET (σ);
+SUBSTITUTE ("སྠ(.*)"r) ("སྟ$1"v) TARGET (σ);
+SUBSTITUTE ("སྥ(.*)"r) ("སྤ$1"v) TARGET (σ);
+SUBSTITUTE ("སྪ(.*)"r) ("སྩ$1"v) TARGET (σ);
+SUBSTITUTE ("རྑ(.*)"r) ("རྐ$1"v) TARGET (σ);
+SUBSTITUTE ("རྪ(.*)"r) ("རྩ$1"v) TARGET (σ);
+SUBSTITUTE ("རྠ(.*)"r) ("རྟ$1"v) TARGET (σ);
+SUBSTITUTE ("ལྑ(.*)"r) ("ལྐ$1"v) TARGET (σ);
+SUBSTITUTE ("ལྖ(.*)"r) ("ལྕ$1"v) TARGET (σ);
+SUBSTITUTE ("ལྠ(.*)"r) ("ལྟ$1"v) TARGET (σ);
+SUBSTITUTE ("ལྥ(.*)"r) ("ལྤ$1"v) TARGET (σ);
+
+APPEND ("$1"v ↑OT) ("<(.*)>"r) (NOT 0 ("$1"v));
+
+
+# Uncomment either of the following as appropriate
+
+# To select Old Tibetan syllables and syllables that didn't require normalization
+# SELECT (↑OT);
+
+# To select Classical Tibetan normalizations as well as syllables not requiring normalization
+# SELECT (σ);
