@@ -64,7 +64,7 @@ SPLITCOHORT (
 # Rule: Split merged syllables for cases as གཅལྟོ > གཅལད་ཏོ apllying the following regular expression:([^aeiouI\s]+[aeiouI][^aeiouI\s]*)t([oe]) > $1d t$2
 SPLITCOHORT (
   "<$1>"v "$1$3ད་"v σ
-  "<$2>"v "ཏ$4"v σ['']
+  "<$2>"v "ཏ$4"v σ
 ) ("<(.+)((.)\\u0F9F([\\u0F7C\\u0F7A]་?))>"r);
 
 # Merged Syllables (Generic Rule)
