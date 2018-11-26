@@ -79,6 +79,10 @@ SPLITCOHORT (
 
 # Reverse Gigu:
 # Background: In Old Tibetan texts there are many cases of reverse gigu - such as ཀྱྀ. These two forms of "gigu" are phonetically indistinguishable and mark no difference in Classical Tibetan.
+
+# Rule: Replace "reverse gigu" in genitive
+SUBSTITUTE ("([^<]*)འྀ་"r) ("$1འི་"v) TARGET (σ);
+
 # Rule: Replace the "reverse gigu" with gigu everywhere.
 SUBSTITUTE ("([^<]*)\\u0F80(.*)"r) ("$1ི$2"v) TARGET (σ);
 
