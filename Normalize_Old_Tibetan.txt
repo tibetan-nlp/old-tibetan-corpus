@@ -6,17 +6,9 @@ DELIMITERS = "<།>";
 # Rule: Replace ོེ་ with  ོའི་ everywhere.
 SUBSTITUTE ("(.*)ོེ་"r) ("$1ོའི་"v) TARGET (σ);
 
-<<<<<<< HEAD
-#In order to avoid cohort rule to be applied
-ADD(genitive) TARGET ("(.*)འི་"r);
-ADD(diphthongs) TARGET ("<(.*)འུ་>"r);
-
-=======
-# Reverse Gigu:
-# Background: In Old Tibetan texts there are many cases of reverse gigu - such as ཀྱྀ. These two forms of "gigu" are phonetically indistinguishable and mark no difference in Classical Tibetan.
-# Rule: Replace the "reverse gigu" with gigu everywhere.
-SUBSTITUTE ("([^<]*)\\u0F80(.*)"r) ("$1ི$2"v) TARGET (σ);
->>>>>>> 021bb678699b5f93ee96980747ce8684962c11de
+# In order to avoid cohort rule to be applied
+ADD (genitive) TARGET ("(.*)འི་"r);
+ADD (diphthongs) TARGET ("<(.*)འུ་>"r);
 
 # Merged Syllables (String replacement rule with exceptions)
 # Background: Traditionally in Classical Tibetan, syllables are separated by a tsheg. In Old Tibetan texts, syllable margins are not so clear and often a syllable (verb, noun and so on) is merged together with the following case marker or converb. For example: སྟགི > སྟག་གི,  དུསུ > དུས་སུ,  བཀུམོ > བཀུམ་མོ.  There is also a case where the prefix la- is merged with the following syllable:   ལསྩོགསྟེ > ལ་སྩོགས་ཏེ,  ལསྩོགས་ཏེ > ལ་སྩོགས་ཏེ. It is possible to split the syllables using three regular # expressions but first we need a string replacement rule to exclude some exceptions.
@@ -62,52 +54,33 @@ SPLITCOHORT (
 # Background: Traditionally in Classical Tibetan, syllables are separated by a tsheg. In Old Tibetan texts, syllable margins are not so clear and often a syllable (verb, noun and so on) is merged together with the following case marker or converb (For example: སྟགི > སྟག་གི,  དུསུ > དུས་སུ,  བཀུམོ > བཀུམ་མོ).  It is possible to split the syllables using three regular expressions - we have to apply the most specific ones first and, at the end, the generic rule.
 # Rule: Split merged syllables for cases as དྲངསྟེ > དྲངས་ཏེ apllying the following regular expression:([^aeiouI\s]+[aeiouI][^aeiouI\s]*)ste > $1s te
 SPLITCOHORT (
-<<<<<<< HEAD
   "<$1>"v "$1ས་"v σ split
   "<སྟེ$2>"v "ཏེ$2"v σ split
-=======
-  "<$1>"v "$1ས་"v σ
-  "<སྟེ$2>"v "ཏེ$2"v σ
->>>>>>> 021bb678699b5f93ee96980747ce8684962c11de
 ) ("<(.+)སྟེ(་?)>"r);
 
 # Merged Syllables (Rule for cases as གཅལྟོ > གཅལད་ཏོ)
 # Background: Traditionally in Classical Tibetan, syllables are separated by a tsheg. In Old Tibetan texts, syllable margins are not so clear and often a syllable (verb, noun and so on) is merged together with the following case marker or converb (For example: སྟགི > སྟག་གི,  དུསུ > དུས་སུ,  བཀུམོ > བཀུམ་མོ). It is possible to split the syllables using three regular expressions - we have to apply the most specific ones first and, at the end, the generic rule.
 # Rule: Split merged syllables for cases as གཅལྟོ > གཅལད་ཏོ apllying the following regular expression:([^aeiouI\s]+[aeiouI][^aeiouI\s]*)t([oe]) > $1d t$2
 SPLITCOHORT (
-<<<<<<< HEAD
   "<$1>"v "$1$3ད་"v σ split
   "<$2>"v "ཏ$4"v σ split
-=======
-  "<$1>"v "$1$3ད་"v σ
-  "<$2>"v "ཏ$4"v σ
->>>>>>> 021bb678699b5f93ee96980747ce8684962c11de
 ) ("<(.+)((.)\\u0F9F([\\u0F7C\\u0F7A]་?))>"r);
 
 # Merged Syllables (Generic Rule)
 # Background: Traditionally in Classical Tibetan, syllables are separated by a tsheg. In Old Tibetan texts, syllable margines are not so clear and often a syllable (verb, noun and so on) is merged together with the following case marker or converb (For example: སྟགི > སྟག་གི,  དུསུ > དུས་སུ,  བཀུམོ > བཀུམ་མོ).  It is possible to split the syllables using three regular expressions - we have to apply the most specific ones first and, at the end, the generic rule.
 # Rule: Split merged syllables apllying the following regular expression:([^aeiouI\s]+[aeiouI][^aeiouI\s]*)([^aeiouI\s'])([aeiouI][^aeiouI\s']*) > $1$2 $2$3
-
-<<<<<<< HEAD
+#
+# [^\\u0FB2\\u0FB1] to exclude the yata and rata in cases as bkro: in general the syllable will be:
+# {2-6}C + C (not yata/rata) + V - Ex: bsgrubso - bsgrubs so
 SPLITCOHORT (
-
-"<$1>"v "$1$3་"v σ
-"<$3$4>"v "$3$4"v σ
-)("<(.{2,6})(([^\\u0FB2\\u0FB1])([\\u0F7C\\u0F7A\\u0F74\\u0F72]་?))>"r)(NOT 0  (split) or (genitive) or (diphthongs));
-
-# [^\\u0FB2\\u0FB1] to exclude the yata and rata in cases as bkro: in general the syllable will be: 
-
-#{2-6}C + C (not yata/rata) + V - Ex: bsgrubso - bsgrubs so
+  "<$1>"v "$1$3་"v σ
+  "<$3$4>"v "$3$4"v σ
+)("<(.{2,6})(([^\\u0FB2\\u0FB1])([\\u0F7C\\u0F7A\\u0F74\\u0F72]་?))>"r)(NOT 0 (split) or (genitive) or (diphthongs));
 
 # Reverse Gigu:
 # Background: In Old Tibetan texts there are many cases of reverse gigu - such as ཀྱྀ. These two forms of "gigu" are phonetically indistinguishable and mark no difference in Classical Tibetan.
 # Rule: Replace the "reverse gigu" with gigu everywhere.
 SUBSTITUTE ("([^<]*)\\u0F80(.*)"r) ("$1ི$2"v) TARGET (σ);
-
-=======
-# Note - this rule needs to be reformulated for Unicode Tibetan
->>>>>>> 021bb678699b5f93ee96980747ce8684962c11de
-
 
 # Ma Ya Btags
 # Background: In the old orthography, a number of words based on མ had a subscribed ཡ attached. Later, these lost the ཡ.
