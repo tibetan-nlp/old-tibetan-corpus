@@ -1895,9 +1895,6 @@ SETPARENT (PART) TO (-1* Head_NOUN OR (VerbForm=Vnoun) BARRIER LEFT_NP_BOUNDARY)
 SETPARENT ("<ཡོངས་>")(1 ("<སུ་>"))(NONE p ALLPOS) TO (*1 (VERB));
 MAP(@obl-adv) TARGET ("<ཡོངས་>")(1 ("<སུ་>"))(p (VERB))(NEGATE s @obl-adv);
 
-
-#obl-adv
-
 SETPARENT Head_NOUN (1 ("<དང་>")) TO (2 (VERB));
 MAP(@obl-adv) TARGET Head_NOUN (1 ("<དང་>"))(p (VERB));
 
