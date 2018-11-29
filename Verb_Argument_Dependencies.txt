@@ -3,8 +3,6 @@
 # Sentence delimiters
 DELIMITERS = "<།>"; 
 
-
-
 LIST ALLPOS = ADJ ADP ADV AUX DET INTJ NOUN NUM PART PRON PROPN PUNCT SCONJ VERB X;
 
 #ADD (VN) ("<.*་[པབ]་?>"r VERB) ;
