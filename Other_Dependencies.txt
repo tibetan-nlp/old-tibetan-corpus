@@ -118,7 +118,7 @@ MAP (@nmod-pro) TARGET (PRON) (p (PRON));
 SETPARENT (DET) (NONE p ALLPOS) TO (-1* Head_NOUN + TAGS OR (ADJ) + TAGS BARRIER LEFT_NP_BOUNDARY);
 SETPARENT (DET) (NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-1 LEFT_NP_BOUNDARY);
 SETPARENT (DET) (NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-2< (PUNCT))(NONE p ALLPOS - TAGS);
-MAP (@det)TARGET (DET) - TAGS (p Head_NOUN OR (ADJ) + TAGS);
+MAP (@det) TARGET (DET) - TAGS (p Head_NOUN OR (ADJ) + TAGS);
 
 
 #----------PART-------------------------------------------------------------
@@ -181,7 +181,9 @@ SETPARENT (Case=Gen)(NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY);
 SETPARENT (Case=Ter)(NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-1 LEFT_NP_BOUNDARY OR (\^arg1) OR (\^arg2));
 
 # all other cases with Terminative 
-SETPARENT (Case=Ter)(NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY);
+SETPARENT (Case=Ter) (NONE p ALLPOS) TO (-1* Head_NOUN + TAGS BARRIER LEFT_NP_BOUNDARY);
+SETPARENT (Case=Ter)(NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-1 LEFT_NP_BOUNDARY);
+SETPARENT (Case=Ter)(NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-2< (PUNCT));
 
 # ADV+ADP
 SETPARENT (ADP) (NONE p ALLPOS) TO (-1 (ADV));
@@ -192,11 +194,20 @@ SETPARENT (ADP) (NONE p ALLPOS) TO (-1 (ADP) LINK -1 (ADV));
 #NOUN+ADP+ADP
 SETPARENT (ADP) (NONE p ALLPOS) TO (-1 (ADP) LINK -1 (NOUN));
 
+#ADP/SCONJ/PART/new line+ADJ+ADP
+SETPARENT (ADP) (NONE p ALLPOS) TO (-1 (ADJ))(-1 (ADP) OR (SCONJ) OR (PART));
+MAP (@case) TARGET (ADP)(p (ADJ));
+SETPARENT (ADP) (NONE p ALLPOS) TO (-1 (ADJ))(-2< (PUNCT));
+MAP (@case) TARGET (ADP)(p (ADJ));
+
 
 #general rule: 
 SETPARENT (ADP) (NONE p ALLPOS) TO (-1* Head_NOUN + TAGS BARRIER LEFT_NP_BOUNDARY);
 SETPARENT (ADP)(NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-1 LEFT_NP_BOUNDARY);
 SETPARENT (ADP)(NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-2< (PUNCT));
+
+#NOUN+VNoun+ADP (VNoun is preventing the parental relation with ADP and the HeadNoun - to be applied after the general rule.
+SETPARENT (ADP)(-1 (VerbForm=Vnoun))(NONE p ALLPOS) TO (-1* TAGS);
 
 MAP (@case) TARGET (ADP) - TAGS (p Head_NOUN OR (ADV));
 
@@ -208,11 +219,17 @@ MAP (@case) TARGET (ADP) - TAGS (p Head_NOUN OR (ADV));
 SETPARENT (SCONJ)(NONE p ALLPOS) TO (-1 (ADV));
 MAP (@fixed) TARGET (SCONJ) - TAGS (p (ADV));
 
-SETPARENT (SCONJ)(NONE p ALLPOS) TO (-1 (AUX))(NOT -2 (VERB))(NONE p ALLPOS - TAGS);
-SETPARENT (SCONJ)(NONE p ALLPOS) TO (-1* (VERB))(NONE p ALLPOS - TAGS);
 
 #converbs
+# it's important to add (NONE p ALLPOS) to the Head_NOUN because I want the relation to point to the real head and not to a NP constituent.
+SETPARENT (SCONJ)(-1 (AUX))(NOT -2 (VERB))(NONE p ALLPOS) TO (-1* Head_NOUN)(NONE p ALLPOS);
+MAP (@mark) TARGET (SCONJ) - TAGS (p (NOUN));
+#(-1* (VERB))(NONE p ALLPOS - TAGS); and not (-1* (VERB)) allows to point to the main verb and not to possible verbs that acts as arguments
+SETPARENT (SCONJ)(NONE p ALLPOS) TO (-1* (VERB))(NONE p ALLPOS - TAGS);
 MAP (@mark) TARGET (SCONJ) - TAGS (p (VERB));
+#VERB(^olb/^obl-adv/^argcl)+SCONJ
+SETPARENT (SCONJ)(NONE p ALLPOS) TO (-1* (VERB) + (\^obl-adv) OR (\^obl) OR (\^argcl));
+MAP (@mark) TARGET (SCONJ)(p (VERB) + (\^obl-adv) OR (\^obl) OR (\^argcl));
 
 
 #------------ADV-----------------------------------------------------------------
