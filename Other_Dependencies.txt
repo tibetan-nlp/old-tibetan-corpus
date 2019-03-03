@@ -1,5 +1,5 @@
 ﻿# Sentence delimiters
-DELIMITERS = "<།>";
+DELIMITERS = "<།>" "<༑>";
 
 LIST ALLPOS = ADJ ADP ADV AUX DET INTJ NOUN NUM PART PRON PROPN PUNCT SCONJ VERB X;
 
@@ -87,7 +87,7 @@ MAP (@appos) TARGET (NOUN) - TAGS (p Head_NOUN);
 
 
 
-#Nouns (without arg labels) + dang 
+#Nouns (without arg labels) + dang
 
 SETPARENT (NOUN) - TAGS (1 ("<དང་>"))(NONE p ALLPOS) TO (2 Head_NOUN);
 MAP (@conj) TARGET (NOUN) - TAGS (1 ("<དང་>"))(p Head_NOUN);
@@ -174,13 +174,13 @@ SETPARENT (Case=Gen)(NONE p ALLPOS) TO (-1 (PRON));
 #genitive - for nested clauses:  include cases N (arg) + N + .... + Gen - where the parental relation is within the second N and Gen
 SETPARENT (Case=Gen)(NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-1 LEFT_NP_BOUNDARY OR (\^arg1) OR (\^arg2) OR (\^obl-arg) OR (\^obl-adv));
 
-# all other cases with Genitive 
+# all other cases with Genitive
 SETPARENT (Case=Gen)(NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY);
 
 #terminative - for nested clauses: include cases N (arg1) + N +...+ Ter where the parental relation is between the second N and Ter (in these cases the second N does not have any ^obl tag)
 SETPARENT (Case=Ter)(NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-1 LEFT_NP_BOUNDARY OR (\^arg1) OR (\^arg2));
 
-# all other cases with Terminative 
+# all other cases with Terminative
 SETPARENT (Case=Ter) (NONE p ALLPOS) TO (-1* Head_NOUN + TAGS BARRIER LEFT_NP_BOUNDARY);
 SETPARENT (Case=Ter)(NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-1 LEFT_NP_BOUNDARY);
 SETPARENT (Case=Ter)(NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-2< (PUNCT));
@@ -201,7 +201,7 @@ SETPARENT (ADP) (NONE p ALLPOS) TO (-1 (ADJ))(-2< (PUNCT));
 MAP (@case) TARGET (ADP)(p (ADJ));
 
 
-#general rule: 
+#general rule:
 SETPARENT (ADP) (NONE p ALLPOS) TO (-1* Head_NOUN + TAGS BARRIER LEFT_NP_BOUNDARY);
 SETPARENT (ADP)(NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-1 LEFT_NP_BOUNDARY);
 SETPARENT (ADP)(NONE p ALLPOS) TO (-1* Head_NOUN BARRIER LEFT_NP_BOUNDARY)(-2< (PUNCT));
@@ -258,4 +258,3 @@ MAP (@appos) TARGET Head_NOUN - TAGS (-1 Head_NOUN) (p Head_NOUN + (@nmod));
 
 
 END
-
