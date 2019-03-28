@@ -145,7 +145,7 @@ SUBSTITUTE ("ཅེན་") ("ཆེན་") TARGET (σ) (-1 ("རྩང་"));
 SUBSTITUTE ("ཕར་") ("པར་") TARGET (σ) (1 ("ལོ་"));
 SUBSTITUTE ("ཅེ་") ("ཆེ་") TARGET (σ) (-1 ("བློན་"));
 SUBSTITUTE ("ཅེ་") ("ཆེ་") TARGET (σ) (-1 ("ཞལ་"));
-
+SUBSTITUTE ("ཁེ་") ("ཀེ་") TARGET (σ) (-1 ("མེར་"));
 
 # Alternation between aspirated and unaspirated voiceless consonants: ཕ / ཕོ vs པ / པོ
 # Background: The phonetic distinction between the syllables ཕ / ཕོ and the syllables པ / པོ at the end of a word is neutralised and marks no distinction in Old Tibetan.
