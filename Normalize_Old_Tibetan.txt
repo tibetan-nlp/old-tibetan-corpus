@@ -146,14 +146,18 @@ SUBSTITUTE ("ཕར་") ("པར་") TARGET (σ) (1 ("ལོ་"));
 SUBSTITUTE ("ཅེ་") ("ཆེ་") TARGET (σ) (-1 ("བློན་"));
 SUBSTITUTE ("ཅེ་") ("ཆེ་") TARGET (σ) (-1 ("ཞལ་"));
 SUBSTITUTE ("ཁེ་") ("ཀེ་") TARGET (σ) (-1 ("མེར་"));
+SUBSTITUTE ("ཆིག(་?)"r) ("གཅིག$1"v) TARGET (σ) (-1 ("ལོ་"));
+
 
 # Alternation between aspirated and unaspirated voiceless consonants: ཕ / ཕོ vs པ / པོ
-# Background: The phonetic distinction between the syllables ཕ / ཕོ and the syllables པ / པོ at the end of a word is neutralised and marks no distinction in Old Tibetan.
+#Background: The phonetic distinction between the syllables ཕ / ཕོ and the syllables པ / པོ at the end of a word is neutralised and marks no distinction in Old Tibetan.
+
 # Rule: Change the following strings, replacing ཕ(འི/ས/ར)་ / ཕོ(འི/ས/ར)་ with པ(འི/ས/ར)་ / པོ(འི/ས/ར)་.
-SUBSTITUTE ("ཕ((འི|ས|ར)?་)"r) ("པ$2"v) TARGET (σ) (-1 ("(སྐྱེས་|བགྱིས་|བཏབ་|སོགས་|གསོལད་)"r));
-SUBSTITUTE ("ཅེན་") ("ཆེན་") TARGET (σ) (1 ("(པོ|ཕོ)(འི|ས|ར)?་"r));
-SUBSTITUTE ("ཕོ((འི|ས|ར)?་)"r) ("པོ$2"v) TARGET (σ) (-1 ("(རྒྱལ་|བློན་|བཚན་|ཆེན་|བཟང་|བདག་|བོན་|རྒན་|བཙན་|དྲག་|དམར་|མང་|མྱེས་|མྱེས་|མེས་|བསྩན་)"r));
-SUBSTITUTE ("ཕ((འི|ས|ར)?་)"r) ("པ$2"v) TARGET (σ) (-1 ("(རྒྱལ་|བློན་|བཚན་|ཆེན་|བཟང་|བདག་|བོན་|རྒན་|བཙན་|དྲག་|དམར་|མང་|མྱེས་|མྱེས་|མེས་|བསྩན་)"r));
+SUBSTITUTE ("ཕ((འི|ས|ར)?་?)"r) ("པ$1"v) TARGET (σ) (-1 ("(སྐྱེས་|བགྱིས་|བཏབ་|སོགས་|གསོལད་)"r));
+SUBSTITUTE ("ཅེན་") ("ཆེན་") TARGET (σ) (1 ("(པོ|ཕོ)(འི|ས|ར)?་?"r));
+SUBSTITUTE ("ཕོ((འི|ས|ར)?་?)"r) ("པོ$1"v) TARGET (σ) (-1 ("(རྒྱལ་|བློན་|བཚན་|ཆེན་|བཟང་|བདག་|བོན་|རྒན་|བཙན་|དྲག་|དམར་|མང་|མྱེས་|མྱེས་|མེས་|བསྩན་)"r));
+SUBSTITUTE ("ཕ((འི|ས|ར)?་?)"r) ("པ$1"v) TARGET (σ) (-1 ("(རྒྱལ་|བློན་|བཚན་|ཆེན་|བཟང་|བདག་|བོན་|རྒན་|བཙན་|དྲག་|དམར་|མང་|མྱེས་|མྱེས་|མེས་|བསྩན་)"r));
+
 
 # Aspirated Voiceless Consonants
 # Background: In Tibetan, Aspirated and Unaspirated Voiceless Consonants can appear only at syllable onset. In old Tibetan aspirated and unaspiratad voiceless initials does not have a phonemic distinction.
