@@ -137,20 +137,21 @@ SUBSTITUTE ("(.+)འ(ས|ད|ར)་"r) ("$1$2་"v) TARGET (σ);
 # Background: In Old Tibetan there is an alternation between aspirated and unaspirated voiceless consonants. We can find words as ཕོ་བྲང་ and  པོ་བྲང་ with no phonetic distinction between them. This rule can not be applied globally and a string replacement rule is needed.
 # Rule: Make the following string replacements:
 SUBSTITUTE ("པོ་") ("ཕོ་") TARGET (σ) (1 ("(ཉ་|ཉ)"r));
-SUBSTITUTE ("ཕོན་") ("དཔོན་") TARGET (σ) (-1 ("དམག་"));
+SUBSTITUTE ("ཕོན(་?)"r) ("དཔོན$1"v) TARGET (σ) (-1 ("དམག་"));
 SUBSTITUTE ("པྱག་") ("ཕྱག་") TARGET (σ);
 SUBSTITUTE ("པོག་") ("ཕོག་") TARGET (σ) (1 ("པ་"));
 SUBSTITUTE ("ཕོ་") ("པོ་") TARGET (σ) (1 ("(བྲང་|བྲང)"r)); 
 SUBSTITUTE ("ཕོ་") ("པོ་") TARGET (σ) (1 ("དང་"))(2 ("ཕོ་"));
-SUBSTITUTE ("ཕོ་") ("པོ་") TARGET (σ) (-1 ("དང་"))(-2 ("པོ་"));
-SUBSTITUTE ("ཕོ་") ("པོ་") TARGET (σ) (-1 ("བལ་"));
-SUBSTITUTE ("ཕོ་") ("པོ་") TARGET (σ) (-1 ("ཕལ་"));
-SUBSTITUTE ("ཅེན་") ("ཆེན་") TARGET (σ) (-1 ("རྩང་")); 
+SUBSTITUTE ("ཕོ(་?)"r) ("པོ$1"v) TARGET (σ) (-1 ("དང་"))(-2 ("པོ་"));
+SUBSTITUTE ("ཕོ(་?)"r) ("པོ$1"v) TARGET (σ) (-1 ("བལ་"));
+SUBSTITUTE ("ཕོ(་?)"r) ("པོ$1"v) TARGET (σ) (-1 ("ཕལ་"));
+SUBSTITUTE ("ཅེན(་?)"r) ("ཆེན$1"v) TARGET (σ) (-1 ("རྩང་")); 
 SUBSTITUTE ("ཕར་") ("པར་") TARGET (σ) (1 ("ལོ་"));
-SUBSTITUTE ("ཅེ་") ("ཆེ་") TARGET (σ) (-1 ("བློན་"));
-SUBSTITUTE ("ཅེ་") ("ཆེ་") TARGET (σ) (-1 ("ཞལ་"));
+SUBSTITUTE ("ཅེ(་?)"r) ("ཆེ$1"v) TARGET (σ) (-1 ("བློན་"));
+SUBSTITUTE ("ཅེ(་?)"r) ("ཆེ$1"v) TARGET (σ) (-1 ("ཞལ་"));
 SUBSTITUTE ("ཁེ་") ("ཀེ་") TARGET (σ) (-1 ("མེར་"));
 SUBSTITUTE ("ཆིག(་?)"r) ("གཅིག$1"v) TARGET (σ) (-1 ("ལོ་"));
+SUBTITUTE ("པྱི(་?)"r) ("ཕྱི$1"v) TARGET (σ);
 
 
 # Alternation between aspirated and unaspirated voiceless consonants: ཕ / ཕོ vs པ / པོ
