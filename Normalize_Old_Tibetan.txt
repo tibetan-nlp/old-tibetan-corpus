@@ -121,6 +121,7 @@ SUBSTITUTE ("ལའ(་?)"r) ("ལ$1"v) TARGET (σ);
 SUBSTITUTE ("ནའ(་?)"r) ("ན$1"v) TARGET (σ);
 SUBSTITUTE ("སྟེའ(་?)"r) ("སྟེ$1"v) TARGET (σ);
 SUBSTITUTE ("བའ(་?)"r) ("བ$1"v) TARGET (σ);
+SUBSTITUTE ("མའ(་?)"r) ("མ$1"v) TARGET (σ);
 
 # ད / ན suffix variation
 # Background: The ད / ན suffix variation is another feature of Old Tibetan. Common forms are ཆེད་པོ་ and ཅེད་པོ་
