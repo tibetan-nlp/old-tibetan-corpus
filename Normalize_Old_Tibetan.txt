@@ -71,7 +71,7 @@ SPLITCOHORT (
   "<$2>"v "ཏ$4"v σ split
 ) ("<(.+)((.)\\u0F9F([\\u0F7C\\u0F7A]་?))>"r);
 
-# Merged Syllables (Rule for cases as གཅལྟོ > གཅལད་ཏོ)
+# Merged Syllables (Rule for cases as པགི་ > པག་གི་)
 # Background: Traditionally in Classical Tibetan, syllables are separated by a tsheg. In Old Tibetan texts, syllable margins are not so clear and often a syllable (verb, noun and so on) is merged together with the following case marker or converb (For example: སྟགི > སྟག་གི,  དུསུ > དུས་སུ,  བཀུམོ > བཀུམ་མོ). It is possible to split the syllables using three regular expressions - we have to apply the most specific ones first and, at the end, the generic rule.
 # Rule: Split merged syllables for cases with genitive as གགྀ་ > གག་གྀ་, པགི་ > པག་གི་ (I need to include this rule otherwise these cases are not taken into account by the generic rules where the condition {2-6}C will skip them. On the other hand, in the generic rule, using a condition as {1-6}C will introduce errors since the rule will split words as "bshi"
 
@@ -151,12 +151,12 @@ SUBSTITUTE ("པོ་") ("ཕོ་") TARGET (σ) (1 ("(ཉ་|ཉ)"r));
 SUBSTITUTE ("ཕོན(་?)"r) ("དཔོན$1"v) TARGET (σ) (-1 ("དམག་"));
 SUBSTITUTE ("པྱག་") ("ཕྱག་") TARGET (σ);
 SUBSTITUTE ("པོག་") ("ཕོག་") TARGET (σ) (1 ("པ་"));
-SUBSTITUTE ("ཕོ་") ("པོ་") TARGET (σ) (1 ("(བྲང་|བྲང)"r));
+SUBSTITUTE ("ཕོ་") ("པོ་") TARGET (σ) (1 ("(བྲང་|བྲང)"r)); 
 SUBSTITUTE ("ཕོ་") ("པོ་") TARGET (σ) (1 ("དང་"))(2 ("ཕོ་"));
 SUBSTITUTE ("ཕོ(་?)"r) ("པོ$1"v) TARGET (σ) (-1 ("དང་"))(-2 ("པོ་"));
 SUBSTITUTE ("ཕོ(་?)"r) ("པོ$1"v) TARGET (σ) (-1 ("བལ་"));
 SUBSTITUTE ("ཕོ(་?)"r) ("པོ$1"v) TARGET (σ) (-1 ("ཕལ་"));
-SUBSTITUTE ("ཅེན(་?)"r) ("ཆེན$1"v) TARGET (σ) (-1 ("རྩང་"));
+SUBSTITUTE ("ཅེན(་?)"r) ("ཆེན$1"v) TARGET (σ) (-1 ("རྩང་")); 
 SUBSTITUTE ("ཕར་") ("པར་") TARGET (σ) (1 ("ལོ་"));
 SUBSTITUTE ("ཅེ(་?)"r) ("ཆེ$1"v) TARGET (σ) (-1 ("བློན་"));
 SUBSTITUTE ("ཅེ(་?)"r) ("ཆེ$1"v) TARGET (σ) (-1 ("ཞལ་"));
