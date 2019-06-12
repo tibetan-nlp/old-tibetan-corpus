@@ -137,7 +137,7 @@ SUBSTITUTE ("མའ(་?)"r) ("མ$1"v) TARGET (σ);
 # Background: The ད / ན suffix variation is another feature of Old Tibetan. Common forms are ཆེད་པོ་ and ཅེད་པོ་
 # Rule: Normalize (་)ཆེད་པོ་(པོའི་/པོར་/པོས་) and (་)ཅེད་པོ་(པོའི་/པོར་/པོས་) as (་)ཆེན་པོ་(པོའི་/པོར་/པོས་) and (་)ཅེན་པོ་(པོའི་/པོར་/པོས་).
 SUBSTITUTE ("ཆེད་པོ((འི|ར|ས)?་)"r) ("ཆེན་པོ$1"v) TARGET (σ);
-SUBSTITUTE ("ཅེད་པོ((འི|ར|ས)་?)"r) ("ཅེན་པོ$1"v) TARGET (σ);
+SUBSTITUTE ("ཅེད་པོ((འི|ར|ས)?་)"r) ("ཅེན་པོ$1"v) TARGET (σ);
 
 # Medial འ
 # Background: In Old Tibetan we can find the presence of a medial འ (lost in Classical Tibetan) within syllables as xxའས་ / xxའད་ / xxའར་.
@@ -151,12 +151,12 @@ SUBSTITUTE ("པོ་") ("ཕོ་") TARGET (σ) (1 ("(ཉ་|ཉ)"r));
 SUBSTITUTE ("ཕོན(་?)"r) ("དཔོན$1"v) TARGET (σ) (-1 ("དམག་"));
 SUBSTITUTE ("པྱག་") ("ཕྱག་") TARGET (σ);
 SUBSTITUTE ("པོག་") ("ཕོག་") TARGET (σ) (1 ("པ་"));
-SUBSTITUTE ("ཕོ་") ("པོ་") TARGET (σ) (1 ("(བྲང་|བྲང)"r)); 
+SUBSTITUTE ("ཕོ་") ("པོ་") TARGET (σ) (1 ("(བྲང་|བྲང)"r));
 SUBSTITUTE ("ཕོ་") ("པོ་") TARGET (σ) (1 ("དང་"))(2 ("ཕོ་"));
 SUBSTITUTE ("ཕོ(་?)"r) ("པོ$1"v) TARGET (σ) (-1 ("དང་"))(-2 ("པོ་"));
 SUBSTITUTE ("ཕོ(་?)"r) ("པོ$1"v) TARGET (σ) (-1 ("བལ་"));
 SUBSTITUTE ("ཕོ(་?)"r) ("པོ$1"v) TARGET (σ) (-1 ("ཕལ་"));
-SUBSTITUTE ("ཅེན(་?)"r) ("ཆེན$1"v) TARGET (σ) (-1 ("རྩང་")); 
+SUBSTITUTE ("ཅེན(་?)"r) ("ཆེན$1"v) TARGET (σ) (-1 ("རྩང་"));
 SUBSTITUTE ("ཕར་") ("པར་") TARGET (σ) (1 ("ལོ་"));
 SUBSTITUTE ("ཅེ(་?)"r) ("ཆེ$1"v) TARGET (σ) (-1 ("བློན་"));
 SUBSTITUTE ("ཅེ(་?)"r) ("ཆེ$1"v) TARGET (σ) (-1 ("ཞལ་"));
@@ -169,10 +169,10 @@ SUBSTITUTE ("པྱི(་?)"r) ("ཕྱི$1"v) TARGET (σ);
 #Background: The phonetic distinction between the syllables ཕ / ཕོ and the syllables པ / པོ at the end of a word is neutralised and marks no distinction in Old Tibetan.
 
 # Rule: Change the following strings, replacing ཕ(འི/ས/ར)་ / ཕོ(འི/ས/ར)་ with པ(འི/ས/ར)་ / པོ(འི/ས/ར)་.
-SUBSTITUTE ("ཕ((འི|ས|ར)?་?)"r) ("པ$1"v) TARGET (σ) (-1 ("(སྐྱེས་|བགྱིས་|བཏབ་|སོགས་|གསོལད་)"r));
+SUBSTITUTE ("ཕ((འི|ས|ར)?་?)"r) ("པ$2"v) TARGET (σ) (-1 ("(སྐྱེས་|བགྱིས་|བཏབ་|སོགས་|གསོལད་)"r));
 SUBSTITUTE ("ཅེན་") ("ཆེན་") TARGET (σ) (1 ("(པོ|ཕོ)(འི|ས|ར)?་?"r));
-SUBSTITUTE ("ཕོ((འི|ས|ར)?་?)"r) ("པོ$1"v) TARGET (σ) (-1 ("(རྒྱལ་|བློན་|བཚན་|ཆེན་|བཟང་|བདག་|བོན་|རྒན་|བཙན་|དྲག་|དམར་|མང་|མྱེས་|མྱེས་|མེས་|བསྩན་)"r));
-SUBSTITUTE ("ཕ((འི|ས|ར)?་?)"r) ("པ$1"v) TARGET (σ) (-1 ("(རྒྱལ་|བློན་|བཚན་|ཆེན་|བཟང་|བདག་|བོན་|རྒན་|བཙན་|དྲག་|དམར་|མང་|མྱེས་|མྱེས་|མེས་|བསྩན་)"r));
+SUBSTITUTE ("ཕོ((འི|ས|ར)?་?)"r) ("པོ$2"v) TARGET (σ) (-1 ("(རྒྱལ་|བློན་|བཚན་|ཆེན་|བཟང་|བདག་|བོན་|རྒན་|བཙན་|དྲག་|དམར་|མང་|མྱེས་|མྱེས་|མེས་|བསྩན་)"r));
+SUBSTITUTE ("ཕ((འི|ས|ར)?་?)"r) ("པ$2"v) TARGET (σ) (-1 ("(རྒྱལ་|བློན་|བཚན་|ཆེན་|བཟང་|བདག་|བོན་|རྒན་|བཙན་|དྲག་|དམར་|མང་|མྱེས་|མྱེས་|མེས་|བསྩན་)"r));
 
 
 # Aspirated Voiceless Consonants
