@@ -143,15 +143,15 @@
 5	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T29
 
 # sent_id = otannals:001:T31
-# text = གནག་ནད་ཆེན་པོ་བྱུང༎། ༆༎དེ་ནས་ལོ་གསུམ་ན། བཙན་པོ་ཁྲྀ་སྲོང་རྩན་གྱྀ་རིང་ལའ། ལྀག་སྙ་ཤུར་བརླག་སྟེ་ཞང་ཞུང་ཐཾས་ཅད་འབངསུ་བཀུག་སྟེ་མངའོ། ༆༎དེ་ནས་ལོ་དྲུག་ན། བཙན་པོ་ཁྲྀ་སྲོང་རྩན་དགུང་དུ་གཤེགསོ། བཙན་མོ་མུན་ཅང་ཀོང་ཅོ་དང་དགུང་ལོ་གསུམ་བཤོས་སོ༆༎ཁྱི་ལོ་ལ་བབ་སྟེ།
+# text = གནག་ནད་ཆེན་པོ་བྱུང༎། ༆༎ དེ་ནས་ལོ་གསུམ་ན། བཙན་པོ་ཁྲྀ་སྲོང་རྩན་གྱྀ་རིང་ལའ། ལྀག་སྙ་ཤུར་བརླག་སྟེ་ཞང་ཞུང་ཐཾས་ཅད་འབངསུ་བཀུག་སྟེ་མངའོ། ༆༎ དེ་ནས་ལོ་དྲུག་ན། བཙན་པོ་ཁྲྀ་སྲོང་རྩན་དགུང་དུ་གཤེགསོ། བཙན་མོ་མུན་ཅང་ཀོང་ཅོ་དང་དགུང་ལོ་གསུམ་བཤོས་སོ ༆༎ ཁྱི་ལོ་ལ་བབ་སྟེ།
 # text_en = There arose a pestilence affecting livestock. Then after three years, during the reign of Khri Srong-btsan, Lig Snya-shur lost and all of Zhangzhung was subjugated and ruled. Then after six years Btsan-po Khri Srong-rtsan departed to heaven. He had been married to Princess Mun-cang Kong-co for three years. It fell on the year [of] the dog.
 1	གནག་ནད་	གནག་ནད་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T31
 2	ཆེན་པོ་	ཆེན་པོ་	ADJ	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T32
 3	བྱུང	འབྱུང་	VERB	_	Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T33
 4	༎	༎་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T204
 5	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T34
-6	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T36
-7	༎	༎་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T37
+6	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T36
+7	༎	༎་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T37
 8	དེ་	དེ་√d	DET	_	PronType=Dem	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T38
 9	ནས་	ནས་√case	ADP	_	Case=Ela	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T39
 10	ལོ་	ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T40
@@ -178,7 +178,7 @@
 29	མངའ་	མངའ་	VERB	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T63
 30	འོ	འོ་√cv	PART	_	Mood=Ind	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T64
 31	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T65
-32	༆༎	༆༎་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T67
+32	༆༎	༆༎་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T67
 33	དེ་	དེ་√d	DET	_	PronType=Dem	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T68
 34	ནས་	ནས་√case	ADP	_	Case=Ela	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T69
 35	ལོ་	ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T70
@@ -199,12 +199,13 @@
 49	དགུང་ལོ་	དགུང་ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T84
 50	གསུམ་	གསུམ་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T85
 51	བཤོས་	བཤོ་	VERB	_	Tense=Past/Pres	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T86
-52	སོ༆༎	སོ༆༎་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T87
-53	ཁྱི་ལོ་	ཁྱི་ལོ་	NOUN	_	Number=Sing	55	obl	_	SpaceAfter=No|Tokenid=otannals:001:T88
-54	ལ་	ལ་√case	ADP	_	Case=All	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T89
-55	བབ་	འབབ་√1	VERB	_	Tense=Fut/Past	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T90
-56	སྟེ	ཏེ་√cv	SCONJ	_	Case=Sem	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T91
-57	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T92
+52	སོ	འོ་√cv	PART	_	Mood=Ind	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T87
+53	༆༎	༆༎་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=Yes
+54	ཁྱི་ལོ་	ཁྱི་ལོ་	NOUN	_	Number=Sing	56	obl	_	SpaceAfter=No|Tokenid=otannals:001:T88
+55	ལ་	ལ་√case	ADP	_	Case=All	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T89
+56	བབ་	འབབ་√1	VERB	_	Tense=Fut/Past	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T90
+57	སྟེ	ཏེ་√cv	SCONJ	_	Case=Sem	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T91
+58	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T92
 
 # sent_id = otannals:001:T94
 # text = བཙན་པོ་མྱེས་ཁྲྀ་སྲོང་རྩན་གྱྀ་སྤུར་ཕྱྀང་བའྀ་རིང་ཁང་ནའ་རྀང་མཁྱུད་ཆྀང་བཞུགསྟེ།
@@ -239,7 +240,7 @@
 8	ལོ་	ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T113
 9	གཅིག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T114
 10	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T115
-11	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T117
+11	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T117
 12	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T118
 13	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T120
 14	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T122
@@ -282,7 +283,7 @@
 11	ལོ་	ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T146
 12	གཅིག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T147
 13	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T148
-14	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T150
+14	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T150
 15	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T151
 16	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T153
 17	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T155
@@ -322,7 +323,7 @@
 9	ལོ་	ལོ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T212
 10	གཅྀག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T178
 11	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T179
-12	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T181
+12	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T181
 13	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T182
 14	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T184
 15	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T186
@@ -408,7 +409,7 @@
 9	ཕར་ལོ་	ཕར་ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T252
 10	གཆྀག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T253
 11	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T254
-12	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T256
+12	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T256
 13	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T257
 14	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T259
 15	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T261
@@ -466,7 +467,7 @@
 12	ལོ་	ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T301
 13	གཆྀག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T302
 14	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T303
-15	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T305
+15	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T305
 16	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T306
 17	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T308
 18	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T310
@@ -512,7 +513,7 @@
 15	ལོ་	ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T343
 16	གཆིག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T344
 17	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T345
-18	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T347
+18	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T347
 19	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T348
 20	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T350
 21	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T352
@@ -556,7 +557,7 @@
 13	ལོ་	ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T382
 14	གཆྀག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T383
 15	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T384
-16	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T386
+16	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T386
 17	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T387
 18	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T389
 19	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T391
@@ -592,7 +593,7 @@
 11	ལོ་	ལོ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T282
 12	གཅིག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T417
 13	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T418
-14	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T420
+14	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T420
 15	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T421
 16	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T423
 17	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T425
@@ -626,7 +627,7 @@
 9	ལོ་	ལོ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T298
 10	ཆིག	ཆིག་	NUM	_	NumForm=Word|NumType=Card	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T297
 11	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T449
-12	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T451
+12	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T451
 13	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T452
 14	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T454
 15	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T456
@@ -697,7 +698,7 @@
 11	ལོ་	ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T512
 12	གཅིག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T513
 13	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T514
-14	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T516
+14	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T516
 15	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T517
 16	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T519
 17	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T521
@@ -728,7 +729,7 @@
 20	ལོ་	ལོ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T336
 21	གཆིག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T543
 22	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T544
-23	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T546
+23	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T546
 24	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T547
 25	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T549
 26	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T551
@@ -758,7 +759,7 @@
 8	ལོ་	ལོ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T340
 9	གཆིག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T570
 10	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T571
-11	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T573
+11	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T573
 12	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T574
 13	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T576
 14	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T578
@@ -796,7 +797,7 @@
 12	ལོ་	ལོ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T375
 13	གཆྀག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T606
 14	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T607
-15	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T610
+15	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T610
 16	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T611
 17	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T613
 18	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:002:T615
@@ -830,7 +831,7 @@
 8	ལོ་	ལོ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T25
 9	ཆྀག	ཆིག་	NUM	_	NumForm=Word|NumType=Card	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T26
 10	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:002:T637
-11	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T639
+11	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T639
 12	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T640
 13	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T642
 14	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:002:T644
@@ -865,7 +866,7 @@
 8	ལོ་	ལོ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T59
 9	ཆིག	ཆིག་	NUM	_	NumForm=Word|NumType=Card	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T60
 10	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:002:T669
-11	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T671
+11	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T671
 12	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T672
 13	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T674
 14	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:002:T676
@@ -900,7 +901,7 @@
 8	ལོ་	ལོ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T40
 9	ཆིག	ཆིག་	NUM	_	NumForm=Word|NumType=Card	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T42
 10	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:002:T701
-11	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T703
+11	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T703
 12	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T704
 13	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T706
 14	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:002:T708
@@ -951,7 +952,7 @@
 6	ལོ་	ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T741
 7	གཆྀག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T742
 8	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:002:T743
-9	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T745
+9	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T745
 10	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T746
 11	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T748
 12	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:002:T750
@@ -984,7 +985,7 @@
 7	ལོ་	ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T771
 8	གཆྀག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T772
 9	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:002:T773
-10	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T775
+10	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T775
 11	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T776
 12	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T778
 13	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:002:T780
@@ -1014,7 +1015,7 @@
 6	ལོ་	ལོ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T61
 7	ཆིག	ཆིག་	NUM	_	NumForm=Word|NumType=Card	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T62
 8	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:002:T804
-9	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T806
+9	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T806
 10	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T807
 11	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T809
 12	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:002:T811
@@ -1051,7 +1052,7 @@
 9	ལོ་	ལོ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T63
 10	ཆྀག	ཆིག་	NUM	_	NumForm=Word|NumType=Card	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T64
 11	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:002:T832
-12	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T834
+12	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T834
 13	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T835
 14	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T837
 15	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:002:T839
@@ -1083,7 +1084,7 @@
 7	ལོ་	ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T862
 8	གཆིག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T863
 9	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:002:T864
-10	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T866
+10	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T866
 11	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T867
 12	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T869
 13	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:002:T871
@@ -1133,7 +1134,7 @@
 9	ལོ་	ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T905
 10	གཆྀག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T906
 11	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:002:T907
-12	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T909
+12	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T909
 13	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T910
 14	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T912
 15	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:002:T914
@@ -1183,7 +1184,7 @@
 6	ལོ་	ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T943
 7	གཆྀག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T944
 8	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:002:T945
-9	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T947
+9	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T947
 10	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T948
 11	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T950
 12	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:002:T952
@@ -1284,7 +1285,7 @@
 4	ལོ་	ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T1021
 5	གཅིག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T1022
 6	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:002:T1023
-7	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T1025
+7	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T1025
 8	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T1026
 9	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T1028
 10	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:002:T1030
@@ -1353,7 +1354,7 @@
 5	ལོ་	ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T1071
 6	གཅིག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T1072
 7	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:002:T1073
-8	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T1075
+8	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T1075
 9	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T1076
 10	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T1078
 11	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:002:T1080
@@ -1451,7 +1452,7 @@
 14	ལོ་	ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T1152
 15	གཆྀག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T1153
 16	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:002:T1154
-17	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T1156
+17	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T1156
 18	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T1157
 19	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T1159
 20	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:002:T1161
@@ -1525,7 +1526,7 @@
 6	ལོ་	ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T1216
 7	གཆིག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T1217
 8	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:002:T1218
-9	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1221
+9	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1221
 10	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1222
 11	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1224
 12	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:003:T1226
@@ -1581,7 +1582,7 @@
 10	ལོ་	ལོ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1
 11	ཆིག	ཆིག་	NUM	_	NumForm=Word|NumType=Card	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T2
 12	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:003:T1271
-13	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1273
+13	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1273
 14	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1274
 15	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1276
 16	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:003:T1278
@@ -1674,7 +1675,7 @@
 4	ལོ་	ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1338
 5	གཆྀག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1339
 6	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:003:T1340
-7	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1342
+7	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1342
 8	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1343
 9	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1345
 10	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:003:T1347
@@ -1784,7 +1785,7 @@
 17	ལོ་	ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1428
 18	གཆྀག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1429
 19	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:003:T1430
-20	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1432
+20	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1432
 21	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1433
 22	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1435
 23	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:003:T1437
@@ -1969,7 +1970,7 @@
 8	ལོ་	ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1599
 9	གཆིག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1600
 10	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:003:T1601
-11	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1603
+11	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1603
 12	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1604
 13	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1606
 14	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:003:T1608
@@ -2073,7 +2074,7 @@
 11	ལོ་	ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1690
 12	གཆིག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1691
 13	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:003:T1692
-14	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1694
+14	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1694
 15	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1695
 16	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1697
 17	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:003:T1699
@@ -2176,7 +2177,7 @@
 9	ལོ་	ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1776
 10	གཆིག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1777
 11	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:003:T1778
-12	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1780
+12	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:003:T1780
 13	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:003:T1781
 
 # sent_id = otannals:003:T1783
@@ -2252,7 +2253,7 @@
 10	ལོ་	ལོ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T10
 11	གཅིག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T1835
 12	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:004:T1836
-13	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T1838
+13	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T1838
 14	།	།	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T1839
 15	༔	༔་	PUNCT	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T1841
 16	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:004:T1843
@@ -2334,7 +2335,7 @@
 9	ལོ་	ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T1907
 10	གཆྀག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T1908
 11	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:004:T1909
-12	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T1911
+12	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T1911
 13	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:004:T1912
 
 # sent_id = otannals:004:T1914
@@ -2395,7 +2396,7 @@
 9	ལོ་	ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T1960
 10	ཆྀག	ཆིག་	NUM	_	Tense=Pres	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T1961
 11	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:004:T1962
-12	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T1964
+12	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T1964
 13	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:004:T1965
 
 # sent_id = otannals:004:T1967
@@ -2458,7 +2459,7 @@
 17	ལོ་	ལོ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T45
 18	ཆིག	ཆིག་	NUM	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T44
 19	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:004:T2016
-20	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T2018
+20	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T2018
 21	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:004:T2019
 22-23	སྟགྀ་	_	_	_	_	_	_	_	SpaceAfter=No
 22	སྟ	སྟ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T155
@@ -2559,7 +2560,7 @@
 17	ལོ་	ལོ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T69
 18	གཆྀག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T2105
 19	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:004:T2106
-20	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T2108
+20	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T2108
 21	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:004:T2109
 
 # sent_id = otannals:004:T2111
@@ -2724,7 +2725,7 @@
 6	ལོ་	ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T2226
 7	གཅིག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T2227
 8	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:004:T2228
-9	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T2230
+9	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T2230
 10	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:004:T2231
 
 # sent_id = otannals:004:T2233
@@ -2798,7 +2799,7 @@
 7	ལོ་	ལོ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T110
 8	ཆིག	ཆིག་	NUM	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T111
 9	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:004:T2280
-10	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T2282
+10	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T2282
 11	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:004:T2283
 
 # sent_id = otannals:004:T2285
@@ -2892,7 +2893,7 @@
 4	ལོ་	ལོ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T135
 5	ཆིག	ཆིག་	NUM	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T136
 6	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:004:T2345
-7	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T2347
+7	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:004:T2347
 8	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:004:T2348
 
 # sent_id = otannals:004:T137
@@ -3012,7 +3013,7 @@
 15	ལོ་	ལོ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:005:T4
 16	ཆིག	ཆིག་	NUM	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:005:T5
 17	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:005:T2436
-18	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:005:T2438
+18	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:005:T2438
 19	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:005:T2439
 
 # sent_id = otannals:005:T2441
@@ -3070,10 +3071,10 @@
 4	མྱྀ་	མི་	NOUN	_	Number=Sing	6	arg2	_	SpaceAfter=No|Tokenid=otannals:005:T2487
 5	མང་པོ་	མང་པོ་	ADJ	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:005:T2488
 6	བཀུག་	འགུགས་	VERB	_	Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otannals:005:T2489
-7	ལོ་	འོ་√cv	NOUN	_	Mood=Ind	0	root	_	SpaceAfter=No|Tokenid=otannals:005:T2490
+7	ལོ་	འོ་√cv	PART	_	Mood=Ind	0	root	_	SpaceAfter=No|Tokenid=otannals:005:T2490
 8	ཅྀག	ཅིག་	NUM	_	Mood=Imp|NumType=Card	0	root	_	SpaceAfter=No|Tokenid=otannals:005:T2491
 9	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:005:T2492
-10	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:005:T2494
+10	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:005:T2494
 11	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:005:T2495
 
 # sent_id = otannals:005:T12
@@ -3199,7 +3200,7 @@
 14	ལོ་	ལོ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:005:T27
 15	ཆིག	ཆིག་	NUM	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:005:T28
 16	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:005:T2592
-17	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:005:T2594
+17	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:005:T2594
 18	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:005:T2595
 19	པ	པ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:005:T134
 20	གི་	གྱི་√case	ADP	_	Case=Gen	0	root	_	SpaceAfter=No|Tokenid=otannals:005:T80
@@ -3283,7 +3284,7 @@
 11	ལོ་	ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:005:T2657
 12	གཆིག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:005:T2658
 13	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:005:T2659
-14	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:005:T2661
+14	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:005:T2661
 15	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:005:T2662
 
 # sent_id = otannals:005:T2664
@@ -3368,7 +3369,7 @@
 5	ལོ་	ལོ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:005:T18
 6	ཆིག	ཆིག་	NUM	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:005:T19
 7	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:005:T2729
-8	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:005:T2731
+8	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:005:T2731
 9	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:005:T2732
 
 # sent_id = otannals:005:T2734
@@ -3582,7 +3583,7 @@
 7	ལོ་	ལོ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:005:T23
 8	ཆིག	ཆིག་	NUM	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:005:T24
 9	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:005:T2906
-10	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:005:T2908
+10	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:005:T2908
 11	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:005:T2909
 
 # sent_id = otannals:005:T2911
@@ -3768,7 +3769,7 @@
 8	ལོ་	ལོ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:006:T30
 9	ཆིག	ཆིག་	NUM	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:006:T31
 10	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:006:T3062
-11	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:006:T3064
+11	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:006:T3064
 12	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:006:T3065
 
 # sent_id = otannals:006:T3067
@@ -3908,7 +3909,7 @@
 4	ལོ་	ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:006:T3190
 5	གཆྀག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:006:T3191
 6	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:006:T3192
-7	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:006:T3194
+7	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:006:T3194
 8	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:006:T3195
 
 # sent_id = otannals:006:T3197
@@ -4017,7 +4018,7 @@
 10	ལོ་	ལོ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:006:T106
 11	ཆིག	ཆིག་	NUM	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:006:T107
 12	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:006:T3286
-13	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:006:T3288
+13	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:006:T3288
 14	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:006:T3289
 
 # sent_id = otannals:006:T108
@@ -4186,7 +4187,7 @@
 10	ལོ་	ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:006:T3407
 11	གཅྀག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:006:T3408
 12	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:006:T3409
-13	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:006:T3411
+13	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:006:T3411
 14	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:006:T3412
 
 # sent_id = otannals:006:T3414
@@ -4658,7 +4659,7 @@
 12	ལོ་	ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:007:T3763
 13	གཆྀག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:007:T3764
 14	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:007:T3765
-15	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:007:T3767
+15	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:007:T3767
 16	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:007:T3768
 
 # sent_id = otannals:007:T3770
@@ -4768,7 +4769,7 @@
 4	ལོ་	ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:007:T3855
 5	གཆིག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:007:T3856
 6	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:007:T3857
-7	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:007:T3859
+7	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:007:T3859
 8	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:007:T3860
 
 # sent_id = otannals:007:T3862
@@ -4894,7 +4895,7 @@
 9	ལོ་	ལོ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:007:T125
 10	ཆིག	ཆིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:007:T126
 11	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:007:T3958
-12	༆	༆་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:007:T3960
+12	༆	༆་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:007:T3960
 13	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:007:T3961
 14-15	སྟགྀ་	_	_	_	_	_	_	_	SpaceAfter=No
 14	སྟ	སྟ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:007:T146
