@@ -11,6 +11,6 @@ The _Old Tibetan Annals_ and the _Old Tibetan Chronicle_ were given a lot of lov
 1. In BRAT, incorrect segmentations and POS-tags were manually corrected. In addition, verb-argument and some other linguistic dependencies were annotated.
 1. The text was then exported from BRAT standoff format to [CONLLU format](https://universaldependencies.org/format.html). As part of this process, the text was "denormalized" back to its original Old Tibetan orthographic practice using the debugging information output by the ```--trace``` flag.
 
-In the case of the _Old Tibetan Annals_, we also copied the English translation of the text from _The Old Tibetan Annals: An Annotated Translation of Tibet's First History_ by Brandon Dotson, and then aligned the translation to the Tibetan text, as can be seen in the CONLLU file.
+In the case of the _Old Tibetan Annals_, we copied the English translation of the text from _The Old Tibetan Annals: An Annotated Translation of Tibet's First History_ by Brandon Dotson, and aligned this translation to the Tibetan text. You can see this in the CONLLU file for the text.
 
 You may cite this work by referencing this repository and its authors: Christian Faggionato, Edward Garrett, and Marieke Meelen. We thank the AHRC for its funding of the project _Lexicography in Motion_ (2017-2020).
