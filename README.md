@@ -1,3 +1,2 @@
-# tibcg3
-This repo collects various grammars for processing Tibetan text written using the VISL CG3 formalism. To compile a grammar, install VISL CG and then type:
-```cg-comp grammar.txt grammar.cg```
+# old-tibetan-corpus
+This repo includes linguistically analyzed Old Tibetan documents as well as tools for processing Old Tibetan text.
