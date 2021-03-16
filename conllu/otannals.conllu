@@ -2,7 +2,7 @@
 # text = [---]་འཁུས་ནས། སྙྀང་དྲུང་[---]་པར། མཐའ་དག་གྱང་[---]་སྣང་གློ་བ་རྀངས་ནས། ཁོ་ནའྀ་བྲན་པ་ཙབ་གྱྀམ་པོ་[---]་བཀྱོན་ཕབ་ནས་བཀུམོ།
 # text_en = ... became treacherous, and at Snying-drung ... [Myang Mang-po-rje Zhang-snang bought about the submission] of all the Sum-pa also. [Then after x years when Myang Zhang-]snang became disloyal, his subject Pa-tsab [betrayed him so that Zhang-snang] was accused and put to death.
 1	[---]་	[---]་	X	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:000:T55
-2	འཁུས་	འཁུ་	VERB	_	Tense=Past|Mood=Ind	0	root	_	SpaceAfter=No|Tokenid=otannals:000:T36
+2	འཁུས་	འཁུ་	VERB	_	Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otannals:000:T36
 3	ནས	ནས་√cv	ADP	_	Case=Ela	0	root	_	SpaceAfter=No|Tokenid=otannals:000:T32
 4	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:000:T77
 5	སྙྀང་དྲུང་	སྙིང་དྲུང་	PROPN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:000:T33
@@ -5847,7 +5847,7 @@
 3	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:009:T643
 4	གནུབས་ཁྲྀ་སུམ་རྗེ་སྟག་རྩན་	གནུབས་ཁྲི་སུམ་རྗེ་སྟག་རྩན་	PROPN	_	_	6	arg2	_	SpaceAfter=No|Tokenid=otannals:009:T34
 5	གཉྀས་	གཉིས་	NUM	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T648
-6	བཆུག	འཇུག་√2	VERB	_	Tense=Past|Mood=Ind	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T649
+6	བཆུག	འཇུག་√2	VERB	_	Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T649
 7	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:009:T650
 
 # sent_id = otannals:009:T652
@@ -5961,7 +5961,7 @@
 10	གཡག་རྒོད་	གཡག་རྒོད་	NOUN	_	_	11	arg2	_	SpaceAfter=No|Tokenid=otannals:009:T741
 11	སྒྲོག་	སྒྲོག་√2	VERB	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T742
 12	དུ་	དུ་√cv	SCONJ	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T743
-13	བཅུག	འཇུག་√2	VERB	_	Tense=Past|Mood=Ind	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T744
+13	བཅུག	འཇུག་√2	VERB	_	Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T744
 14	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:009:T745
 
 # sent_id = otannals:009:T747
@@ -6174,12 +6174,12 @@
 3	ལས་	ལས་√case	ADP	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T934
 4	བཞྀ	བཞི་	NUM	_	_	6	obl	_	SpaceAfter=No|Tokenid=otannals:009:T935
 5	ར་	དུ་√case	ADP	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T936
-6	བཅོས་པ	འཆོས་√1	VERB	_	Tense=Past|Mood=Ind|VerbForm=Vnoun	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T937
+6	བཅོས་པ	འཆོས་√1	VERB	_	Tense=Past|VerbForm=Vnoun	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T937
 7	འྀ་	གྱི་√case	ADP	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T938
 8	ཟླུགས་	ཟླུགས་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T939
 9	གྱྀ་	གྱིས་√case	ADP	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T940
 10	རིང་ལུགས་	རིང་ལུགས་	NOUN	_	_	11	arg2	_	SpaceAfter=No|Tokenid=otannals:009:T941
-11	བཀྱེའ	འགྱེད་√1	VERB	_	Tense=Past|Mood=Ind	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T72
+11	བཀྱེའ	འགྱེད་√1	VERB	_	Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T72
 12	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:009:T943
 
 # sent_id = otannals:009:T74
@@ -6322,7 +6322,7 @@
 1	འ་ཞ་	འ་ཞ་	PROPN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T101
 2	ཕལ་ཕོ་ཆེ་	ཕལ་པོ་ཆེ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T102
 3	བྱ་སྒ་	བྱ་སྒ་	NOUN	_	_	4	arg2	_	SpaceAfter=No|Tokenid=otannals:009:T104
-4	སྩལད	སྩོལ་	VERB	_	Tense=Past|Mood=Ind	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T103
+4	སྩལད	སྩོལ་	VERB	_	Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T103
 5	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:009:T1064
 
 # sent_id = otannals:009:T1066
@@ -6336,7 +6336,7 @@
 6	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:009:T1074
 7	ཞང་འབྲྀང་རཚན་ཁྱྀ་བུ	ཞང་འབྲིང་རཚན་ཁྱི་བུ་	PROPN	_	_	9	arg1	_	SpaceAfter=No|Tokenid=otannals:009:T107
 8	ས་	གྱིས་√case	ADP	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T1080
-9	བསྡུས་	སྡུད་	VERB	_	Tense=Past|Mood=Ind	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T108
+9	བསྡུས་	སྡུད་	VERB	_	Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T108
 10	མདོ་སྨད་	མདོ་སྨད་	PROPN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T109
 11	གྱྀ་	གྱི་√case	ADP	_	Case=Gen	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T110
 12	འདུན་མ་	འདུན་མ་	NOUN	_	_	18	arg2	_	SpaceAfter=No|Tokenid=otannals:009:T111
@@ -6421,7 +6421,7 @@
 2	བློན་ཆེན་པོ	བློན་ཆེན་པོ་	NOUN	_	_	5	obl:arg	_	SpaceAfter=No|Tokenid=otannals:009:T122
 3	ར་	དུ་√case	ADP	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T1150
 4	བཀའ་	བཀའ་	NOUN	_	_	5	arg2:lvc	_	SpaceAfter=No|Tokenid=otannals:009:T121
-5	སྩལད	སྩོལ་	VERB	_	Tense=Past|Mood=Ind	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T120
+5	སྩལད	སྩོལ་	VERB	_	Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T120
 6	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:009:T1152
 
 # sent_id = otannals:009:T124
@@ -6448,7 +6448,7 @@
 5	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:009:T1170
 6	བཞྀ	བཞི་	NUM	_	_	8	obl	_	SpaceAfter=No|Tokenid=otannals:009:T1172
 7	ར་	དུ་√case	ADP	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T1173
-8	བཅོས་པ	འཆོས་√1	VERB	_	Tense=Past|Mood=Ind	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T1174
+8	བཅོས་པ	འཆོས་√1	VERB	_	Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T1174
 9	འྀ་	གྱི་√case	ADP	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T1175
 10	ཏང་ཁྲཾ་	ཏང་ཁྲཾ་	NOUN	_	_	11	arg2	_	SpaceAfter=No|Tokenid=otannals:009:T131
 11	བཏབ	འདེབས་	VERB	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:009:T1178
@@ -6561,7 +6561,7 @@
 1	དམག་	དམག་	NOUN	_	_	4	arg2	_	SpaceAfter=No|Tokenid=otannals:010:T1266
 2	དྲུ་གུ་ཡུལ་	དྲུ་གུ་ཡུལ་	PROPN	_	_	4	obl	_	SpaceAfter=No|Tokenid=otannals:010:T94
 3	དུ་	དུ་√case	ADP	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:010:T1269
-4	དྲངས་ཕ་	འདྲེན་	VERB	_	Tense=Past|Mood=Ind|VerbForm=Vnoun	0	root	_	SpaceAfter=No|Tokenid=otannals:010:T1270
+4	དྲངས་ཕ་	འདྲེན་	VERB	_	Tense=Past|VerbForm=Vnoun	0	root	_	SpaceAfter=No|Tokenid=otannals:010:T1270
 5	སླ	སླ་	NOUN	_	_	7	obl:adv	_	SpaceAfter=No|Tokenid=otannals:010:T123
 6	ར་	དུ་√case	ADP	_	Case=Ter	0	root	_	SpaceAfter=No|Tokenid=otannals:010:T124
 7	འཁོརད་པ	འཁོར་	VERB	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:010:T1272
@@ -6587,7 +6587,7 @@
 10	དིང་དྀང་ཏང་	དིང་དིང་ཏང་	PROPN	_	_	12	obl	_	SpaceAfter=No|Tokenid=otannals:010:T27
 11	ན་	ན་√case	ADP	_	Case=Loc	0	root	_	SpaceAfter=No|Tokenid=otannals:010:T28
 12-13	བཞུགསྟེ	_	_	_	_	_	_	_	SpaceAfter=No
-12	བཞུགས་	བཞུགས་	VERB	_	Tense=Past|Mood=Ind	0	root	_	SpaceAfter=No|Tokenid=otannals:010:T29
+12	བཞུགས་	བཞུགས་	VERB	_	Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otannals:010:T29
 13	ཏེ	ཏེ་√cv	SCONJ	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:010:T1293
 14	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:010:T1294
 
@@ -6793,7 +6793,7 @@
 13	གྱྀ་	གྱིས་√case	ADP	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:010:T1470
 14	པོ་ཉ་	ཕོ་ཉ་	NOUN	_	_	16	arg1	_	SpaceAfter=No|Tokenid=otannals:010:T1471
 15	ཕྱག་	ཕྱག་	NOUN	_	_	16	arg2:lvc	_	SpaceAfter=No|Tokenid=otannals:010:T88
-16	འཙལད	འཚལ་√1	VERB	_	Tense=Past|Mood=Ind	0	root	_	SpaceAfter=No|Tokenid=otannals:010:T87
+16	འཙལད	འཚལ་√1	VERB	_	Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otannals:010:T87
 17	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:010:T1473
 
 # sent_id = otannals:010:T35
@@ -6880,7 +6880,7 @@
 11	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:010:T1547
 12	སྩོགས་པ་	སོགས་	VERB	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:010:T1549
 13	པྱག་	ཕྱག་	NOUN	_	_	14	arg2:lvc	_	SpaceAfter=No|Tokenid=otannals:010:T80
-14	འཙལད	འཚལ་√1	VERB	_	Tense=Past|Mood=Ind	0	root	_	SpaceAfter=No|Tokenid=otannals:010:T81
+14	འཙལད	འཚལ་√1	VERB	_	Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otannals:010:T81
 15	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:010:T1551
 
 # sent_id = otannals:010:T1553
@@ -6957,7 +6957,7 @@
 3	ཕོ་ཉ་	ཕོ་ཉ་	NOUN	_	_	6	arg1	_	SpaceAfter=No|Tokenid=otannals:010:T1612
 4	ཝང་འདོ་ཤྀ་	ཝང་འདོ་ཤི་	PROPN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:010:T91
 5	ཕྱག་	ཕྱག་	NOUN	_	_	6	arg2:lvc	_	SpaceAfter=No|Tokenid=otannals:010:T78
-6	འཙལད	འཚལ་√1	VERB	_	Tense=Past|Mood=Ind	0	root	_	SpaceAfter=No|Tokenid=otannals:010:T79
+6	འཙལད	འཚལ་√1	VERB	_	Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otannals:010:T79
 7	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:010:T1615
 
 # sent_id = otannals:010:T1617
@@ -6989,7 +6989,7 @@
 1	འདུན་མ་	འདུན་མ་	NOUN	_	_	4	arg1	_	SpaceAfter=No|Tokenid=otannals:010:T76
 2	ཟློ	ཟློ་	PROPN	_	_	4	obl	_	SpaceAfter=No|Tokenid=otannals:010:T110
 3	ར་	དུ་√case	ADP	_	Case=Ter	0	root	_	SpaceAfter=No|Tokenid=otannals:010:T109
-4	འདུས	འདུ་	VERB	_	Tense=Past|Mood=Ind	0	root	_	SpaceAfter=No|Tokenid=otannals:010:T77
+4	འདུས	འདུ་	VERB	_	Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otannals:010:T77
 5	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:010:T1641
 
 # sent_id = otannals:010:T111
@@ -7088,7 +7088,7 @@
 3	གྱྀ་	གྱིས་√case	ADP	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:010:T1714
 4	འོམ་བུ་ཙལ་	འོམ་བུ་ཙལ་	PROPN	_	_	6	obl	_	SpaceAfter=No|Tokenid=otannals:010:T61
 5	ན་	ན་√case	ADP	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:010:T1717
-6	བཞུགས་	བཞུགས་	VERB	_	Tense=Past/Pres|Mood=Ind	0	root	_	SpaceAfter=No|Tokenid=otannals:010:T62
+6	བཞུགས་	བཞུགས་	VERB	_	Tense=Past/Pres	0	root	_	SpaceAfter=No|Tokenid=otannals:010:T62
 7	བློན་ཆེན་པོ་	བློན་ཆེན་པོ་	NOUN	_	_	11	arg1	_	SpaceAfter=No|Tokenid=otannals:010:T63
 8	ཅུང་བཟང་	ཅུང་བཟང་	PROPN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:010:T64
 9	འ་ཞ་ཡུལ་	འ་ཞ་ཡུལ་	PROPN	_	_	11	obl	_	SpaceAfter=No|Tokenid=otannals:010:T65
@@ -7216,14 +7216,14 @@
 3	ཕོ་ཉ་	ཕོ་ཉ་	NOUN	_	_	6	arg1	_	SpaceAfter=No|Tokenid=otannals:011:T1830
 4	ཝང་འདོ་ཤྀ་	ཝང་འདོ་ཤི་	PROPN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T61
 5	པྱག་	ཕྱག་	NOUN	_	_	6	arg2:lvc	_	SpaceAfter=No|Tokenid=otannals:011:T60
-6	འཙལད	འཚལ་√1	VERB	_	Tense=Past|Mood=Ind	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T59
+6	འཙལད	འཚལ་√1	VERB	_	Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T59
 7	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:011:T1833
 8	ནས	ནས་√cv	SCONJ	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T1835
 9	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:011:T1836
 10	རྒྱ	རྒྱ་	PROPN	_	_	13	arg1	_	SpaceAfter=No|Tokenid=otannals:011:T76
 11	ས་	གྱིས་√case	ADP	_	Case=Agn	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T77
 12	ཆབ་སྲྀད་	ཆབ་སྲིད་	NOUN	_	_	13	arg2	_	SpaceAfter=No|Tokenid=otannals:011:T78
-13	བཤྀག་པ	འཇིག་√2	VERB	_	Tense=Past|Mood=Ind|VerbForm=Vnoun	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T1839
+13	བཤྀག་པ	འཇིག་√2	VERB	_	Tense=Past|VerbForm=Vnoun	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T1839
 14	ར་	དུ་√case	ADP	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T1840
 15	ལོ་	ལོ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T1841
 16	གཆྀག	གཅིག་	NUM	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T1842
@@ -7291,7 +7291,7 @@
 # text = ཅད་ཀ་བརྩྀས།
 # text_en = They calculated the extraordinary taxes.
 1	ཅད་ཀ་	ཅད་ཀ་	NOUN	_	_	2	arg2	_	SpaceAfter=No|Tokenid=otannals:011:T80
-2	བརྩྀས	རྩི་	VERB	_	Tense=Past|Mood=Ind	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T79
+2	བརྩྀས	རྩི་	VERB	_	Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T79
 3	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:011:T1891
 
 # sent_id = otannals:011:T81
@@ -7359,7 +7359,7 @@
 # text_en = Princess Kim-sheng Khong-co died. So one year.
 1	བཙན་མོ་	བཙན་མོ་	NOUN	_	_	3	arg1	_	SpaceAfter=No|Tokenid=otannals:011:T48
 2	ཀྀམ་ཤེང་ཁོང་ཅོ་	ཀིམ་ཤེང་ཁོང་ཅོ་	PROPN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T49
-3	ནོངས་པ	ནོང་√2	VERB	_	Tense=Past|Mood=Ind|VerbForm=Vnoun	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T1949
+3	ནོངས་པ	ནོང་√2	VERB	_	Tense=Past|VerbForm=Vnoun	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T1949
 4	ར་	དུ་√case	ADP	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T1950
 5	ལོ་	ལོ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T1951
 6	ཆིག	གཅིག་	NUM	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T1952
@@ -7401,7 +7401,7 @@
 5	ལ་	ལ་√case	ADP	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T1989
 6	བག་མ	བག་མ་	NOUN	_	_	8	obl	_	SpaceAfter=No|Tokenid=otannals:011:T88
 7	ར་	དུ་√case	ADP	_	Case=Ter	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T89
-8	བཏང	གཏོང་√1	VERB	_	Tense=Past|Mood=Ind	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T1992
+8	བཏང	གཏོང་√1	VERB	_	Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T1992
 9	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:011:T1993
 
 # sent_id = otannals:011:T14
@@ -7496,13 +7496,13 @@
 2	གྱྀས	གྱིས་√case	ADP	_	Case=Agn	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T2065
 3	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:011:T2066
 4-5	བརྒལྟེ་	_	_	_	_	_	_	_	SpaceAfter=No
-4	བརྒལད་	རྒོལ་	VERB	_	Tense=Past|Mood=Ind	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T2068
+4	བརྒལད་	རྒོལ་	VERB	_	Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T2068
 5	ཏེ་	ཏེ་√cv	SCONJ	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T2069
 6	མཀར་	མཁར་	NOUN	_	_	10	arg2	_	SpaceAfter=No|Tokenid=otannals:011:T2070
 7	ལྕགས་རྩེ་	ལྕགས་རྩེ་	PROPN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T2071
 8	སླ	སླ་	NOUN	_	_	10	obl:adv	_	SpaceAfter=No|Tokenid=otannals:011:T2072
 9	ར་	དུ་√case	ADP	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T2073
-10	ཐོབ	འཐོབ་	VERB	_	Tense=Past|Mood=Ind	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T2074
+10	ཐོབ	འཐོབ་	VERB	_	Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T2074
 11	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:011:T2075
 
 # sent_id = otannals:011:T71
@@ -7518,7 +7518,7 @@
 8	གཉྀས་	གཉིས་	NUM	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T2087
 9	གྱྀ་	གྱིས་√case	ADP	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T2088
 10	མདད་	མདད་	NOUN	_	_	11	arg2	_	SpaceAfter=No|Tokenid=otannals:011:T2089
-11	བཏང	གཏོང་√1	VERB	_	Tense=Past|Mood=Ind	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T2090
+11	བཏང	གཏོང་√1	VERB	_	Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T2090
 12	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:011:T2091
 13	བར་	བར་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T2093
 14	ལོ་	ལོ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T2094
@@ -7587,7 +7587,7 @@
 # text = ཐང་ཁྲམ་བཏབ།
 # text_en = They made a tally of jurisdictions.
 1	ཐང་ཁྲམ་	ཐང་ཁྲམ་	NOUN	_	_	2	arg2	_	SpaceAfter=No|Tokenid=otannals:011:T119
-2	བཏབ	འདེབས་	VERB	_	Tense=Past|Mood=Ind	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T118
+2	བཏབ	འདེབས་	VERB	_	Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T118
 3	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:011:T2154
 
 # sent_id = otannals:011:T117
@@ -7613,7 +7613,7 @@
 3	བྲག་མར་	བྲག་མར་	PROPN	_	_	6	obl	_	SpaceAfter=No|Tokenid=otannals:011:T124
 4	དུའ	དུ་√case	ADP	_	Case=Ter	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T123
 5	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:011:T2170
-6	བལྟམ	ལྟམ་	VERB	_	Tense=Past|Mood=Ind	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T2172
+6	བལྟམ	ལྟམ་	VERB	_	Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T2172
 7	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:011:T2173
 
 # sent_id = otannals:011:T2175
@@ -7621,7 +7621,7 @@
 # text_en = The mother, [Sna-nam] Mang-mo-rje [Bzhisteng], died. So one year.
 1	ཡུམ་	ཡུམ་	NOUN	_	_	3	arg1	_	SpaceAfter=No|Tokenid=otannals:011:T2175
 2	མང་མོ་རྗེ་	མང་མོ་རྗེ་	PROPN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T127
-3	ནོངས་ཕ	ནོང་√2	VERB	_	Tense=Past|Mood=Ind|VerbForm=Vnoun	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T126
+3	ནོངས་ཕ	ནོང་√2	VERB	_	Tense=Past|VerbForm=Vnoun	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T126
 4	ར་	དུ་√case	ADP	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T2177
 5	ལོ་	ལོ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T2178
 6	གཆྀག	གཅིག་	NUM	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T2179
@@ -7671,7 +7671,7 @@
 1	ཕ་ལོས་	ཕ་ལོས་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T2214
 2	གྱྀ་	གྱིས་√case	ADP	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T2215
 3	བྱང་བུ་	བྱང་བུ་	NOUN	_	_	4	arg2	_	SpaceAfter=No|Tokenid=otannals:011:T128
-4	བོར	འབོར་	VERB	_	Tense=Past|Mood=Ind	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T2218
+4	བོར	འབོར་	VERB	_	Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T2218
 5	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:011:T2219
 
 # sent_id = otannals:011:T31
@@ -7816,7 +7816,7 @@
 5	ཤོག་ཤོག་	ཤོག་ཤོག་	NOUN	_	_	8	obl	_	SpaceAfter=No|Tokenid=otannals:011:T146
 6	སེར་པོ་	སེར་པོ་	ADJ	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T2331
 7	ལ་	ལ་√case	ADP	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T2332
-8	སྤོས་པ	སྤོ་	VERB	_	Tense=Past|Mood=Ind	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T2333
+8	སྤོས་པ	སྤོ་	VERB	_	Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T2333
 9	ར་	དུ་√case	ADP	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T2334
 10	ལོ་	ལོ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T2335
 11	ཆྀག	གཅིག་	NUM	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T2336
@@ -7852,7 +7852,7 @@
 1	དགུན་འདུན་	དགུན་འདུན་	NOUN	_	_	4	arg1	_	SpaceAfter=No|Tokenid=otannals:011:T152
 2	དྲ་བྱེ	དྲ་བྱེ་	PROPN	_	_	4	obl	_	SpaceAfter=No|Tokenid=otannals:011:T151
 3	ར་	དུ་√case	ADP	_	Case=Ter	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T150
-4	འདུས	འདུ་	VERB	_	Tense=Past|Mood=Ind	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T149
+4	འདུས	འདུ་	VERB	_	Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otannals:011:T149
 5	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:011:T2366
 
 # sent_id = otannals:011:T156
@@ -7887,7 +7887,7 @@
 2	ཁྲྀ་བཙུན་	ཁྲི་བཙུན་	PROPN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:012:T2398
 3	གྱྀ་	གྱིས་√case	ADP	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:012:T2399
 4	མདད་	མདད་	NOUN	_	_	5	arg2	_	SpaceAfter=No|Tokenid=otannals:012:T2400
-5	བཏང་བ	གཏོང་√1	VERB	_	Tense=Past|Mood=Ind|VerbForm=Vnoun	0	root	_	SpaceAfter=No|Tokenid=otannals:012:T2401
+5	བཏང་བ	གཏོང་√1	VERB	_	Tense=Past|VerbForm=Vnoun	0	root	_	SpaceAfter=No|Tokenid=otannals:012:T2401
 6	ར་	དུ་√case	ADP	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:012:T2402
 7	ལོ་	ལོ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:012:T2403
 8	གཆྀག	གཅིག་	NUM	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:012:T2404
