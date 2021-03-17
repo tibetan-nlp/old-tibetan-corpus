@@ -5,7 +5,7 @@ The _Old Tibetan Annals_ and the _Old Tibetan Chronicle_ were given a lot of lov
 
 1. First, the Wylie transliteration from OTDO was converted to Unicode Tibetan text.
 1. Next, this plain Unicode text was converted to [VISL CG](https://visl.sdu.dk/cg3/single/#stream-vislcg) format using regular expressions, with each Tibetan "syllable" counting as a VISL CG word form.
-1. The _ot2ct_ constraint grammar was applied to the VISL CG input with the ```--trace``` flag enabled. This grammar eliminates the orthographic peculiarities of Old Tibetan, making it more similar to Classical Tibetan text.
+1. The ```ot2ct``` constraint grammar was applied to the VISL CG input with the ```--trace``` flag enabled. This grammar eliminates the orthographic peculiarities of Old Tibetan, making it more similar to Classical Tibetan text.
 1. The normalized text was then automatically word segmented and part-of-speech tagged using a tagger trained on Classical Tibetan materials.
 1. The tagged text was converted to [BRAT standoff format](https://brat.nlplab.org/) for manual annotation.
 1. In BRAT, incorrect segmentations and POS-tags were manually corrected. In addition, verb-argument and some other linguistic dependencies were annotated.
