@@ -175,7 +175,7 @@
 27	བཀུག་	གུག་	VERB	_	Tense=Fut/Past	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T61
 28	སྟེ་	ཏེ་√cv	SCONJ	_	Case=Sem	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T62
 29-30	མངའོ	_	_	_	_	_	_	_	SpaceAfter=No
-29	མངའ་	མངའ་	VERB	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T63
+29	མངའ་	མངའ་	VERB	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T63
 30	འོ	འོ་√cv	PART	_	Mood=Ind	0	root	_	SpaceAfter=No|Tokenid=otannals:001:T64
 31	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T65
 32	༆༎	༆༎་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=Yes|Tokenid=otannals:001:T67
@@ -1280,7 +1280,7 @@
 # text = ཕ་ལོས་བཀུག་པར་ལོ་གཅིག། ༆།༔།
 # text_en = and convoked [a registration of] the male able-bodied adults. So one year.
 1	ཕ་ལོས་	ཕ་ལོས་	NOUN	_	_	2	arg2	_	SpaceAfter=No|Tokenid=otannals:002:T103
-2	བཀུག་པ	འགུགས་	VERB	_	Number=Sing|Tense=Past|VerbForm=Vnoun	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T1019
+2	བཀུག་པ	འགུགས་	VERB	_	Tense=Past|VerbForm=Vnoun	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T1019
 3	ར་	དུ་√case	ADP	_	Case=Ter	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T1020
 4	ལོ་	ལོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T1021
 5	གཅིག	གཅིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T1022
@@ -1401,7 +1401,7 @@
 3	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:002:T1110
 4	གསེར་ཟངས་	གསེར་ཟངས་	NOUN	_	_	6	arg2	_	SpaceAfter=No|Tokenid=otannals:002:T116
 5	ཆེན་པོ་	ཆེན་པོ་	ADJ	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T1114
-6	གསོལད་ཕ་	གསོལ་	VERB	_	Number=Sing|Tense=Past|VerbForm=Vnoun	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T1115
+6	གསོལད་ཕ་	གསོལ་	VERB	_	Tense=Past|VerbForm=Vnoun	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T1115
 7	དང	དང་√case	ADP	_	Case=Com	0	root	_	SpaceAfter=No|Tokenid=otannals:002:T1116
 8	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:002:T1117
 
@@ -4943,7 +4943,7 @@
 1	བྲུང་པ་	བྲུང་པ་	NOUN	_	_	4	arg2	_	SpaceAfter=No|Tokenid=otannals:007:T137
 2	རྡོ་འཕན་ཀོང་	རྡོ་འཕན་ཀོང་	PROPN	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:007:T138
 3	ནྀ་	ནི་√cl	PART	_	_	0	root	_	SpaceAfter=No|Tokenid=otannals:007:T3993
-4	བྱུང	འབྱུང་	VERB	_	Number=Coll|Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otannals:007:T3994
+4	བྱུང	འབྱུང་	VERB	_	Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otannals:007:T3994
 5	།	།	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otannals:007:T3995
 6	ཚེས་པོང་ཏྲེ་གོང་	ཚེས་པོང་ཏྲེ་གོང་	PROPN	_	_	7	arg2	_	SpaceAfter=No|Tokenid=otannals:007:T139
 7	བཆུག་	འཇུག་√2	VERB	_	Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otannals:007:T3999
