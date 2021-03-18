@@ -13,4 +13,6 @@ The _Old Tibetan Annals_ and the _Old Tibetan Chronicle_ were given a lot of lov
 
 In the case of the _Old Tibetan Annals_, we copied the English translation of the text from _The Old Tibetan Annals: An Annotated Translation of Tibet's First History_ by Brandon Dotson, and aligned this translation to the Tibetan text. You can see this in the CONLLU file for the text.
 
+The _archive_ directory contains files in legacy or unmaintained formats. 
+
 You may cite this work by referencing this repository and its authors: Christian Faggionato, Edward Garrett, and Marieke Meelen. We thank the AHRC for its funding of the project _Lexicography in Motion_ (2017-2020, PI Ulrich Pagel).
