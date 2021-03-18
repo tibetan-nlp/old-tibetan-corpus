@@ -1,6 +1,8 @@
 # Old Tibetan Corpus
 Here you will find linguistically analyzed Old Tibetan documents as well as tools for processing Old Tibetan text. We have taken these documents directly from the [Old Tibetan Documents Online](https://otdo.aa-ken.jp/) project.
 
+*CAVEAT TO WHAT FOLLOWS:* The Old Tibetan Chronicle has not yet been uploaded to this repository.
+
 The _Old Tibetan Annals_ and the _Old Tibetan Chronicle_ were given a lot of love and care as they passed through these stages of analysis:
 
 1. First, the Wylie transliteration from OTDO was converted to Unicode Tibetan text.
