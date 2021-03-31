@@ -7518,10 +7518,10 @@
 8	༎	༎་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otchronicle:013:T7036
 
 # sent_id = otchronicle:013:T7038
-# text = མྱི་དྲིན་[]་
+# text = མྱི་དྲིན་[---]་
 1	མྱི་	མི་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otchronicle:013:T7038
 2	དྲིན་	དྲིན་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otchronicle:013:T7039
-3	[]་	[]་	NOTAG	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:013:T33
+3	[---]་	[---]་	NOTAG	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:013:T33
 
 # sent_id = otchronicle:013:T7042
 # text = མྱྀ་ནི་སྙིང་མྱྀ་གཆད༎
@@ -16288,7 +16288,7 @@
 13	༎	༎་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otchronicle:027:T14755
 
 # sent_id = otchronicle:027:T14757
-# text = བོད་ཀྱི་དམག་པོན། བློན་ཁྲི་འབྲྀང་གིས། དགྲ་ཐབས། []་དང་གཡག་ལྟར་བྱས་ནས༎
+# text = བོད་ཀྱི་དམག་པོན། བློན་ཁྲི་འབྲྀང་གིས། དགྲ་ཐབས། [---]་དང་གཡག་ལྟར་བྱས་ནས༎
 1	བོད་	བོད་	PROPN	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T14757
 2	ཀྱི་	ཀྱི་	ADP	_	Case=Gen	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T14758
 3	དམག་པོན	དམག་པོན་	NOUN	_	_	16	arg1	_	SpaceAfter=No|Tokenid=otchronicle:027:T13
@@ -16299,7 +16299,7 @@
 8	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otchronicle:027:T14767
 9	དགྲ་ཐབས	དགྲ་ཐབས་	PROPN	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T14769
 10	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otchronicle:027:T14770
-11	[]་	[]་	X	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T24
+11	[---]་	[---]་	X	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T24
 12	དང་	དང་	ADP	_	Case=Com	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T14774
 13	གཡག་	གཡག་	NOUN	_	Number=Sing	16	arg2	_	SpaceAfter=No|Tokenid=otchronicle:027:T14775
 14	ལྟ	ལྟ་	NOUN	_	NounType=Rel	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T14776
@@ -16366,10 +16366,10 @@
 3	༎	༎་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otchronicle:027:T14830
 
 # sent_id = otchronicle:027:T14832
-# text = མྱང་ད[]་[]།
+# text = མྱང་ད[---]་[---]།
 1	མྱང་	མྱང་	PROPN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T14832
-2	ད[]་	ད[]་	X	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T23
-3	[]	[]་	NOTAG	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T48
+2	ད[---]་	ད[---]་	X	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T23
+3	[---]	[---]་	NOTAG	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T48
 4	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otchronicle:027:T14837
 
 # sent_id = otchronicle:027:T14839
@@ -16403,8 +16403,8 @@
 7	༎	༎་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otchronicle:027:T14858
 
 # sent_id = otchronicle:027:T26
-# text = []ང་ཀོག་ལ་སོགས་པའ༎
-1	[]ང་	[]ང་	X	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T26
+# text = [---]ང་ཀོག་ལ་སོགས་པའ༎
+1	[---]ང་	[---]ང་	X	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T26
 2	ཀོག་	ཀོག་	PROPN	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T14862
 3	ལ་	ལ་	ADP	_	Case=All	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T14863
 4	སོགས་པའ	སོགས་	VERB	_	VerbForm=Vnoun	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T14864
@@ -16431,10 +16431,10 @@
 15	༎	༎་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otchronicle:027:T14880
 
 # sent_id = otchronicle:027:T27
-# text = []་མང་པོ་རྗེ་སྟག་[]་ཚབ་རྒྱལ་ཏོ་རེ་རྒྱ་ལ་བྲོས་པ་འི་ཚེ༎
-1	[]་	[]་	X	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T27
+# text = [---]་མང་པོ་རྗེ་སྟག་[---]་ཚབ་རྒྱལ་ཏོ་རེ་རྒྱ་ལ་བྲོས་པ་འི་ཚེ༎
+1	[---]་	[---]་	X	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T27
 2	མང་པོ་རྗེ་སྟག་	མང་པོ་རྗེ་སྟག་	PROPN	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T28
-3	[]་	[]་	X	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T29
+3	[---]་	[---]་	X	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T29
 4	ཚབ་རྒྱལ་ཏོ་རེ་	ཚབ་རྒྱལ་ཏོ་རེ་	PROPN	_	_	7	arg1	_	SpaceAfter=No|Tokenid=otchronicle:027:T30
 5	རྒྱ་	རྒྱ་	PROPN	_	Number=Sing	7	obl	_	SpaceAfter=No|Tokenid=otchronicle:027:T14892
 6	ལ་	ལ་	ADP	_	Case=All	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T14893
@@ -16452,8 +16452,8 @@
 5	༎	༎་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otchronicle:027:T14906
 
 # sent_id = otchronicle:027:T32
-# text = []་ན་ལས༎
-1	[]་ན་	[]་ན་	X	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T32
+# text = [---]་ན་ལས༎
+1	[---]་ན་	[---]་ན་	X	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T32
 2	ལས	ལས་	ADP	_	Case=Abl	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T14910
 3	༎	༎་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otchronicle:027:T14911
 
@@ -16477,10 +16477,10 @@
 7	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otchronicle:027:T14927
 
 # sent_id = otchronicle:027:T14929
-# text = ན་ནིང་ནྀ་[]་འགྲེས་སུ་ནྀ་སྤང་བཟངས་ནས། མ་སྲིང་ནྀ་སྡུག་གིས་བསྐྱལ།
+# text = ན་ནིང་ནྀ་[---]་འགྲེས་སུ་ནྀ་སྤང་བཟངས་ནས། མ་སྲིང་ནྀ་སྡུག་གིས་བསྐྱལ།
 1	ན་ནིང་	ན་ནིང་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T14929
 2	ནྀ་	ནི་	PART	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T34
-3	[]་	[]་	X	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T35
+3	[---]་	[---]་	X	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T35
 4	འགྲེས་སུ་ནྀ་སྤང་བཟངས་	འགྲེས་སུ་ནི་སྤང་བཟངས་	PROPN	_	_	12	obl	_	SpaceAfter=No|Tokenid=otchronicle:027:T36
 5	ནས	ནས་	ADP	_	Case=Ela	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T14939
 6	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otchronicle:027:T14940
@@ -16493,11 +16493,11 @@
 13	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otchronicle:027:T14948
 
 # sent_id = otchronicle:027:T37
-# text = ཙོང་ཀ་ནི་ཆེ་ཅུང་[]་རྗེ་འྀ་ནི་སྐལ་པོག་པ་རྒྱ་རྗེ་ནི་བསམ་ལང་ཞིག།
+# text = ཙོང་ཀ་ནི་ཆེ་ཅུང་[---]་རྗེ་འྀ་ནི་སྐལ་པོག་པ་རྒྱ་རྗེ་ནི་བསམ་ལང་ཞིག།
 1	ཙོང་ཀ་	ཙོང་ཀ་	PROPN	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T37
 2	ནི་	ནི་	PART	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T14952
 3	ཆེ་ཅུང་	ཆེ་ཅུང་	PROPN	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T38
-4	[]་	[]་	X	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T39
+4	[---]་	[---]་	X	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T39
 5	རྗེ་	རྗེ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T14957
 6	འྀ་	འི་	ADP	_	Case=Gen	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T14958
 7	ནི་	ནི་	PART	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T14959
@@ -16511,14 +16511,14 @@
 15	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otchronicle:027:T14968
 
 # sent_id = otchronicle:027:T14970
-# text = པུར་མྱྀ་ནི་སྐལ་བ་རུ་རྒྱ་[]་ཆག་པ༎
+# text = པུར་མྱྀ་ནི་སྐལ་བ་རུ་རྒྱ་[---]་ཆག་པ༎
 1	པུར་	པུར་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T14970
 2	མྱྀ་	མི་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T14971
 3	ནི་	ནི་	PART	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T14972
 4	སྐལ་བ་	སྐལ་བ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T14973
 5	རུ་	རུ་	ADP	_	Case=Ter	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T14974
 6	རྒྱ་	རྒྱ་	PROPN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T14975
-7	[]་	[]་	X	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T41
+7	[---]་	[---]་	X	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T41
 8	ཆག་པ	འཆག་√2	VERB	_	VerbForm=Vnoun|Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T14978
 9	༎	༎་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otchronicle:027:T14979
 
@@ -16530,7 +16530,7 @@
 4	༎	༎་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otchronicle:027:T14988
 
 # sent_id = otchronicle:027:T14990
-# text = ཅོག་རོ་ཟ་ཁྱོ་དང་ལྷན་ཆིག་རྒྱ་ལ་[]་མཆིད་བླངས་པའ༎
+# text = ཅོག་རོ་ཟ་ཁྱོ་དང་ལྷན་ཆིག་རྒྱ་ལ་[---]་མཆིད་བླངས་པའ༎
 1	ཅོག་རོ་	ཅོག་རོ་	PROPN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T14990
 2	ཟ་	ཟ་	NOUN	_	Tense=Pres	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T14991
 3	ཁྱོ་	ཁྱོ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T14992
@@ -16539,7 +16539,7 @@
 6	ཆིག་	ཆིག་	NUM	_	NumType=Card|NumForm=Word	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T14995
 7	རྒྱ་	རྒྱ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T14996
 8	ལ་	ལ་	ADP	_	Case=All	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T14997
-9	[]་	[]་	X	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T42
+9	[---]་	[---]་	X	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T42
 10	མཆིད་	མཆིད་	NOUN	_	_	11	arg2	_	SpaceAfter=No|Tokenid=otchronicle:027:T43
 11	བླངས་པའ	ལེན་	VERB	_	Tense=Past|VerbForm=Vnoun	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T15001
 12	༎	༎་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otchronicle:027:T15002
@@ -16558,10 +16558,10 @@
 10	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otchronicle:027:T15017
 
 # sent_id = otchronicle:027:T46
-# text = རྨ་འྀ་ནི་པོང་བྲ་ནས་[]་དུད་བརྡའ་བཏང།
+# text = རྨ་འྀ་ནི་པོང་བྲ་ནས་[---]་དུད་བརྡའ་བཏང།
 1	རྨ་འྀ་ནི་པོང་བྲ་	རྨ་འི་ནི་པོང་བྲ་	PROPN	_	_	6	obl	_	SpaceAfter=No|Tokenid=otchronicle:027:T46
 2	ནས་	ནས་	ADP	_	Case=Ela	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T15024
-3	[]་	[]་	NUM	_	NumType=Card|NumForm=Digit	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T15025
+3	[---]་	[---]་	NUM	_	NumType=Card|NumForm=Digit	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T15025
 4	དུད་	དུད་	NOUN	_	Number=Sing	6	arg2	_	SpaceAfter=No|Tokenid=otchronicle:027:T15026
 5	བརྡའ་	བརྡའ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T15027
 6	བཏང	གཏོང་√1	VERB	_	Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otchronicle:027:T15028
@@ -16583,11 +16583,11 @@
 6	༎	༎་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otchronicle:028:T15046
 
 # sent_id = otchronicle:028:T15048
-# text = འདྲོགས་སོ་ནི་[]་འདའས་སོ་ནྀ་ཧབ་ཆེན་གོང༎
+# text = འདྲོགས་སོ་ནི་[---]་འདའས་སོ་ནྀ་ཧབ་ཆེན་གོང༎
 1	འདྲོགས་	འདྲོག་	VERB	_	Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otchronicle:028:T15048
 2	སོ་	སོ་	ADP	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:028:T15049
 3	ནི་	ནི་	PART	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:028:T15050
-4	[]་	[]་	X	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:028:T2
+4	[---]་	[---]་	X	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:028:T2
 5	འདའས་	འདའ་	VERB	_	Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otchronicle:028:T15053
 6	སོ་	སོ་	PART	_	Mood=Ind	0	root	_	SpaceAfter=No|Tokenid=otchronicle:028:T15054
 7	ནྀ་	ནི་	PART	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:028:T15055
@@ -16614,11 +16614,11 @@
 4	༎	༎་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otchronicle:028:T15073
 
 # sent_id = otchronicle:028:T5
-# text = ཡང་ཅུང་སྟེངས་[]་ནྀང་སྔ།
+# text = ཡང་ཅུང་སྟེངས་[---]་ནྀང་སྔ།
 1	ཡང་	ཡང་	PART	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:028:T5
 2	ཅུང་	ཅུང་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:028:T6
 3	སྟེངས་	སྟེངས་	NOUN	_	NounType=Rel	0	root	_	SpaceAfter=No|Tokenid=otchronicle:028:T15077
-4	[]་	[]་	X	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:028:T8
+4	[---]་	[---]་	X	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:028:T8
 5	ནྀང་	ནིང་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:028:T9
 6	སྔ	སྔ་	ADV	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:028:T7
 7	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otchronicle:028:T15081
@@ -16632,7 +16632,7 @@
 5	།	།་	PUNCT	_	_	0	root	_	SpaceAfter=Yes|Tokenid=otchronicle:028:T15088
 
 # sent_id = otchronicle:028:T15090
-# text = རྒྱ་རྗེ་ནྀ་བསམ་ལང་གཉིས། བསྡོས་ཤིང་ནྀ་དོ་རེ་བཉམས་[]་ནི་སང་ལྟ་ན༎
+# text = རྒྱ་རྗེ་ནྀ་བསམ་ལང་གཉིས། བསྡོས་ཤིང་ནྀ་དོ་རེ་བཉམས་[---]་ནི་སང་ལྟ་ན༎
 1	རྒྱ་	རྒྱ་	PROPN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otchronicle:028:T15090
 2	རྗེ་	རྗེ་	NOUN	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otchronicle:028:T15091
 3	ནྀ་	ནི་	PART	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:028:T15092
@@ -16645,7 +16645,7 @@
 10	དོ་	དོ་	NOUN	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:028:T15101
 11	རེ་	རེ་	DET	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:028:T15102
 12	བཉམས་	བཉམས་	VERB	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:028:T13
-13	[]་	[]་	X	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:028:T12
+13	[---]་	[---]་	X	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:028:T12
 14	ནི་	ནི་	PART	_	_	0	root	_	SpaceAfter=No|Tokenid=otchronicle:028:T15107
 15	སང་	སང་	ADV	_	Number=Sing	0	root	_	SpaceAfter=No|Tokenid=otchronicle:028:T15108
 16	ལྟ་	ལྟ་√1	VERB	_	NounType=Rel|Tense=Past	0	root	_	SpaceAfter=No|Tokenid=otchronicle:028:T15109
