@@ -3273,7 +3273,7 @@
 3	ངན་ལམ་སྟག་སྒྲ་ཀླུ་གོང་	ངན་ལམ་སྟག་སྒྲ་ཀླུ་གོང་	PROPN	_	_	5	arg1	_	SpaceAfter=No|Tokenid=otchronicle:006:T6
 4	གིས་	གིས་	ADP	_	Case=Agn	0	root	_	SpaceAfter=No|Tokenid=otchronicle:006:T3036
 5-6	བྱསོ	_	_	_	_	_	_	_	SpaceAfter=No
-5	བྱས	བྱེད་	_	Tense=Past	0	root	_	SpaceAfter=No
+5	བྱས	བྱེད་	VERB	_	Tense=Past	0	root	_	SpaceAfter=No
 6	སོ	འོ་√cv	PART	_	Mood=Ind	0	root	_	SpaceAfter=No
 7	༎	༎་	PUNCT	_	Number=Sing	0	root	_	SpaceAfter=Yes|Tokenid=otchronicle:006:T3037
 
@@ -3298,7 +3298,7 @@
 5	འབྲོ་ཁྲི་གཟུ་རམ་ཤགས་	འབྲོ་ཁྲི་གཟུ་རམ་ཤགས་	PROPN	_	_	7	arg1	_	SpaceAfter=No|Tokenid=otchronicle:006:T8
 6	ཀྱིས་	ཀྱིས་	ADP	_	Case=Agn	0	root	_	SpaceAfter=No|Tokenid=otchronicle:006:T3062
 7-8	བྱསོ	_	_	_	_	_	_	_	SpaceAfter=No
-7	བྱས	བྱེད་	_	Tense=Past	0	root	_	SpaceAfter=No
+7	བྱས	བྱེད་	VERB	_	Tense=Past	0	root	_	SpaceAfter=No
 8	སོ	འོ་√cv	PART	_	Mood=Ind	0	root	_	SpaceAfter=No
 9	༎	༎་	PUNCT	_	NumType=Card|NumForm=Digit	0	root	_	SpaceAfter=Yes|Tokenid=otchronicle:006:T3063
 
