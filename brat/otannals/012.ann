@@ -1,0 +1,175 @@
+T2397	NOUN 0 6	ཇོ་མོ་
+T2398	PROPN 6 15	ཁྲི་བཙུན་
+T2399	ADP 15 19	གྱི་
+N2399	Reference T2399 Nonverbs:0026	གྱིས་√case
+T2400	NOUN 19 23	མདད་
+T2401	VERB 23 28	བཏང་བ
+T2402	ADP 28 30	ར་
+N2402	Reference T2402 Nonverbs:0051	དུ་√case
+T2403	NOUN 30 33	ལོ་
+T2404	NUM 33 37	གཅིག
+T2405	PUNCT 38 39	།
+T2407	PUNCT 40 41	༆
+T2409	PUNCT 42 43	།
+T2411	NOUN 44 51	ཁྱི་ལོ་
+T2412	ADP 51 52	ལ
+N2412	Reference T2412 Nonverbs:0028	ལ་√case
+T2413	PUNCT 52 53	།
+T2419	ADP 79 81	ན་
+N2419	Reference T2419 Nonverbs:0039	ན་√case
+T2420	VERB 81 86	བཞུགས
+N2420	Reference T2420 Hill:1549	བཞུགས་
+T2421	PUNCT 86 87	།
+T2425	ADP 100 102	ན་
+N2425	Reference T2425 Nonverbs:0039	ན་√case
+T2426	VERB 102 108	བཞུགས་
+N2426	Reference T2426 Hill:1549	བཞུགས་
+T2427	SCONJ 108 110	ཏེ
+N2427	Reference T2427 Nonverbs:0165	ཏེ་√cv
+T2428	PUNCT 110 111	།
+T2430	NOUN 112 124	བློན་ཆེན་པོ་
+T2431	PROPN 124 132	ཅུང་བཟང་
+T2432	ADP 132 135	དང་
+N2432	Reference T2432 Nonverbs:0031	དང་√case
+T2435	NUM 158 163	གཉིས་
+T2436	VERB 163 167	གྱིས
+N2436	Reference T2436 Hill:0260	བགྱིད་
+T2437	PUNCT 167 168	།
+T2443	ADP 196 199	དུ་
+N2443	Reference T2443 Nonverbs:0051	དུ་√case
+T2444	VERB 199 205	བསྡུས་
+N2444	Reference T2444 Hill:0960	སྡུད་
+T2445	SCONJ 205 207	ཏེ
+N2445	Reference T2445 Nonverbs:0165	ཏེ་√cv
+T2446	PUNCT 207 208	།
+T2450	ADP 215 218	འི་
+N2450	Reference T2450 Nonverbs:0012	གྱི་√case
+T2451	NOUN 218 228	འབྲོག་སོག་
+T2452	ADP 228 231	གི་
+N2452	Reference T2452 Nonverbs:0026	གྱིས་√case
+T2453	NOUN 231 236	མཁོས་
+T2454	VERB 236 241	བགྱིས
+N2454	Reference T2454 Hill:0260	བགྱིད་
+T2455	PUNCT 241 242	།
+T2459	PUNCT 253 254	།
+T2463	SCONJ 277 278	ལ
+T2464	PUNCT 278 279	།
+T2466	NOUN 280 286	ཁྲལ་པ་
+T2467	NOUN 286 289	གུ་
+T2468	ADP 289 292	དུ་
+N2468	Reference T2468 Nonverbs:0051	དུ་√case
+T2469	VERB 292 296	སྤགས
+T2470	PUNCT 296 297	།
+T2472	NOUN 298 310	བློན་ཆེན་པོ་
+T2473	ADV 310 316	མན་ཆད་
+N2473	Reference T2473 Nonverbs:0381	མན་ཅད་
+T2475	SCONJ 325 327	ཏེ
+N2475	Reference T2475 Nonverbs:0165	ཏེ་√cv
+T2476	PUNCT 327 328	།
+T2480	ADJ 336 343	ཆེན་པོ་
+T2481	VERB 343 347	མཛད་
+N2481	Reference T2481 Hill:1465	མཛད་
+T2482	SCONJ 347 349	ནས
+N2482	Reference T2482 Nonverbs:0074	ནས་√cv
+T2483	PUNCT 349 350	།
+T2489	ADP 386 388	ར་
+N2489	Reference T2489 Nonverbs:0051	དུ་√case
+T2490	NOUN 388 391	ལོ་
+T2491	NUM 391 395	གཅིག
+T2492	PUNCT 396 397	།
+T2494	PUNCT 398 399	༆
+T2496	PUNCT 400 401	།
+T2498	NOUN 402 405	ཕག་
+T2499	ADP 405 408	གི་
+N2499	Reference T2499 Nonverbs:0026	གྱིས་√case
+T2500	NOUN 408 411	ལོ་
+T2501	ADP 411 412	ལ
+N2501	Reference T2501 Nonverbs:0028	ལ་√case
+T2502	PUNCT 412 413	།
+T2504	NOUN 414 420	བཙན་པོ
+T2505	ADP 420 423	འི་
+N2505	Reference T2505 Nonverbs:0012	གྱི་√case
+T2506	NOUN 423 430	པོ་བྲང་
+T2509	ADP 435 437	ན་
+N2509	Reference T2509 Nonverbs:0039	ན་√case
+T2510	VERB 437 443	བཞུགས་
+N2510	Reference T2510 Hill:1549	བཞུགས་
+T2511	SCONJ 443 445	ཏེ
+N2511	Reference T2511 Nonverbs:0165	ཏེ་√cv
+T2512	PUNCT 445 446	།
+T2516	VERB 457 463	གཅོད་པ
+N2516	Reference T2516 Hill:0468	གཅོད་
+T2517	ADP 463 466	འི་
+N2517	Reference T2517 Nonverbs:0012	གྱི་√case
+T2518	NOUN 466 475	རིང་ལུགས་
+T2519	PRON 475 480	སོ་སོ
+N2519	Reference T2519 Nonverbs:0176	སོ་སོ་√p
+T2520	ADP 480 482	ར་
+N2520	Reference T2520 Nonverbs:0051	དུ་√case
+T2521	VERB 482 486	བཀྱེ
+N2521	Reference T2521 Hill:0305	འགྱེད་√1
+T2522	PUNCT 486 487	།
+T2524	NOUN 488 493	ཁུ་ལེ
+T2525	ADP 493 495	ར་
+N2525	Reference T2525 Nonverbs:0051	དུ་√case
+T2526	NOUN 495 500	ཆིབས་
+T1	NOUN 54 61	བཙན་པོ་
+T2	NOUN 61 67	དབྱརད་
+T3	NOUN 67 74	པོ་བྲང་
+T4	PROPN 74 79	ན་མར་
+R1	obl Arg1:T2420 Arg2:T4
+R2	arg1 Arg1:T2420 Arg2:T1
+T5	NOUN 88 93	དགུན་
+T6	PROPN 93 100	བྲག་མར་
+R3	obl Arg1:T2426 Arg2:T6
+T7	NOUN 135 140	བློན་
+T8	PROPN 140 158	སྐྱེས་བཟང་ལྡོང་ཙབ་
+T9	NOUN 169 179	དགུན་འདུན་
+T10	PROPN 179 196	སྐྱི་བྱར་ལིངས་ཙལ་
+R4	arg2 Arg1:T2444 Arg2:T9
+R5	obl Arg1:T2444 Arg2:T10
+T11	PROPN 430 435	ན་མར་
+R6	obl Arg1:T2510 Arg2:T11
+R7	arg1 Arg1:T2510 Arg2:T2506
+R8	arg1 Arg1:T2444 Arg2:T7
+A1	Tense T2401 Past
+A2	Mood T2401 Ind
+A3	VerbForm T2401 Vnoun
+N1	Reference T2401 Hill:0695	གཏོང་√1
+R9	arg2 Arg1:T2401 Arg2:T2400
+T12	PROPN 209 215	རུ་བཞི
+R10	arg2-lvc Arg1:T2454 Arg2:T2453
+T13	NOUN 243 252	བཙན་པོ་བཀ
+T14	ADP 252 253	ས
+A4	Case T14 Agn
+N2	Reference T14 Nonverbs:0026	གྱིས་√case
+T15	VERB 272 277	ཐོགས་
+N3	Reference T15 Hill:0781	ཐོགས་√2
+T16	NOUN 266 272	གླེའུ་
+T17	ADP 263 266	འི་
+A5	Case T17 Gen
+N4	Reference T17 Nonverbs:0010	གྱི་√case
+T18	NOUN 255 263	སྟོང་སྡེ
+R11	arg2 Arg1:T15 Arg2:T16
+R12	arg1 Arg1:T15 Arg2:T13
+N5	Reference T2469 Hill:1055	སྤོག་
+R13	obl Arg1:T2469 Arg2:T2466
+T19	NOUN 316 320	བྲོ་
+T20	VERB 320 325	སྩལད་
+N6	Reference T20 Hill:1397	སྩོལ་
+R14	arg2-lvc Arg1:T20 Arg2:T19
+R15	arg1 Arg1:T20 Arg2:T2472
+T21	NOUN 329 336	བཀའ་ནན་
+R16	arg2 Arg1:T2481 Arg2:T21
+T22	VERB 379 386	སཅུངས་པ
+T23	NOUN 371 379	ཁྲལ་ཐུང་
+T24	ADP 368 371	འི་
+A6	Case T24 Gen
+N7	Reference T24 Nonverbs:0010	གྱི་√case
+T25	ADJ 363 368	ནག་པོ
+T26	NOUN 354 363	འབངས་མགོ་
+R17	arg2 Arg1:T22 Arg2:T23
+R18	arg2 Arg1:T2521 Arg2:T2518
+R19	obl-adv Arg1:T2521 Arg2:T2519
+T27	NOUN 447 457	འབྲོག་སོག་
+R20	arg2 Arg1:T2516 Arg2:T27

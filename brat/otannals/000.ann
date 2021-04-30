@@ -1,0 +1,169 @@
+T1	PROPN 201 205	འ་ཞ་
+T2	PROPN 223 227	འ་ཞ་
+T3	NUM 227 232	གཉིས་
+A1	NumType T3 Card
+T4	ADP 232 237	གྱིས་
+A2	Case T4 Agn
+T5	ADP 255 256	ན
+A3	Case T5 Loc
+T6	NOUN 258 265	བཙན་པོ་
+T9	NUM 297 302	གཉིས་
+T10	NOUN 149 156	བཙན་པོ་
+T11	PROPN 156 169	ཁྲི་སྲོང་རྩན་
+T12	ADP 169 173	གྱིས
+A4	Case T12 Agn
+T13	PART 391 393	སོ
+A5	Mood T13 Ind
+N1	Reference T13 Nonverbs:0099	འོ་√cv
+T14	ADP 220 223	དང་
+A6	Case T14 Com
+T15	ADP 279 281	དང
+A7	Case T15 Com
+N2	Reference T14 Nonverbs:0031	དང་√case
+N3	Reference T15 Nonverbs:0031	དང་√case
+T16	ADP 382 385	སུ་
+A8	Case T16 Ter
+N4	Reference T16 Nonverbs:0051	དུ་√case
+T17	SCONJ 67 69	ནས
+A9	Case T17 Ela
+T18	PART 139 141	གོ
+A10	Mood T18 Ind
+N6	Reference T18 Nonverbs:0099	འོ་√cv
+T19	PART 246 248	ཏོ
+A11	Mood T19 Ind
+N7	Reference T19 Nonverbs:0099	འོ་√cv
+T20	PART 118 120	མོ
+A12	Mood T20 Ind
+T21	ADP 205 208	དང་
+A13	Case T21 Com
+N9	Reference T21 Nonverbs:0031	དང་√case
+T22	ADP 358 360	དུ
+A14	Case T22 Ter
+N10	Reference T22 Nonverbs:0051	དུ་√case
+T23	ADP 32 33	ར
+A15	Case T23 Ter
+N11	Reference T23 Nonverbs:0051	དུ་√case
+T24	ADP 187 190	དུ་
+A16	Case T24 Ter
+N12	Reference T24 Nonverbs:0051	དུ་√case
+T25	ADP 75 78	འི་
+A17	Case T25 Gen
+N13	Reference T25 Nonverbs:0012	གྱི་√case
+T26	SCONJ 195 198	སྟེ
+A18	Case T26 Sem
+N14	Reference T26 Nonverbs:0165	ཏེ་√cv
+T27	SCONJ 340 342	ཏེ
+A19	Case T27 Sem
+N15	Reference T27 Nonverbs:0165	ཏེ་√cv
+T28	SCONJ 110 113	ནས་
+A20	Case T28 Ela
+N16	Reference T28 Nonverbs:0074	ནས་√cv
+T29	SCONJ 307 309	ནས
+A21	Case T29 Ela
+N17	Reference T29 Nonverbs:0074	ནས་√cv
+T30	ADP 349 353	གྱི་
+A22	Case T30 Gen
+T32	ADP 11 13	ནས
+A24	Case T32 Ela
+N20	Reference T32 Nonverbs:0074	ནས་√cv
+T33	PROPN 15 25	སྙིང་དྲུང་
+T34	ADJ 35 42	མཐའ་དག་
+T35	PART 42 46	གྱང་
+N21	Reference T35 Nonverbs:0352	འང་√cl
+T36	VERB 6 11	འཁུས་
+A25	Tense T36 Past
+A26	Mood T36 Ind
+T37	PROPN 52 56	སྣང་
+T38	PRON 71 75	ཁོ་ན
+A27	PronType T38 Prs
+T40	NOUN 78 82	བྲན་
+T41	VERB 107 110	ཕབ་
+A28	Tense T41 Past
+N23	Reference T41 Hill:1225	འབེབས་
+T42	NOUN 101 107	བཀྱོན་
+R1	arg2 Arg1:T41 Arg2:T42
+T43	VERB 113 118	བཀུམ་
+T44	NOUN 123 127	མཁར་
+T45	PROPN 127 134	སྡུར་བ་
+T46	VERB 134 139	བཤིག་
+A29	Tense T43 Past
+N24	Reference T43 Hill:0284	འགུམས་
+R2	arg2 Arg1:T46 Arg2:T44
+N25	Reference T46 Hill:0557	འཇིག་√2
+T47	NOUN 208 212	རྒྱ་
+T48	ADP 212 214	ལ་
+A30	Case T48 All
+N26	Reference T48 Nonverbs:0028	ལ་√case
+T49	NOUN 184 187	ལམ་
+T50	VERB 190 195	པྱུང་
+A31	Tense T50 Past
+N27	Reference T50 Hill:1243	འབྱུང་
+T51	NOUN 180 184	བྱང་
+T52	NOUN 175 180	ཤུལད་
+R3	obl Arg1:T50 Arg2:T52
+R4	arg1 Arg1:T50 Arg2:T10
+T53	VERB 241 246	གཅལད་
+A32	Tense T53 Past
+N28	Reference T53 Hill:1462	འཚོལ་
+T54	NOUN 237 241	དཔྱ་
+R5	arg2 Arg1:T53 Arg2:T54
+R6	arg1 Arg1:T53 Arg2:T2
+T7	PROPN 270 279	སྲོང་རྩན་
+T56	NOUN 265 270	གཅེན་
+T8	PROPN 288 297	བཙན་སྲོང་
+T57	NOUN 283 288	གཅུང་
+T58	VERB 302 307	ནོལད་
+A33	Tense T58 Past
+N29	Reference T58 Hill:0995	ནོལ་
+R7	arg1 Arg1:T58 Arg2:T57
+T59	NOUN 311 316	གཅུང་
+T60	PROPN 325 335	མཁས་སྲེགས་
+T61	VERB 335 340	འཁུས་
+A34	Tense T61 Past
+N30	Reference T61 Hill:0132	འཁུ་
+R8	arg1 Arg1:T61 Arg2:T60
+T62	PROPN 344 349	མཉལད་
+T63	PROPN 353 358	གཟེན་
+T64	NOUN 362 367	གཅུང་
+T66	VERB 377 382	ཞུགས་
+A35	Tense T66 Past
+N31	Reference T66 Hill:1549	བཞུགས་
+R9	arg1 Arg1:T66 Arg2:T64
+R10	obl Arg1:T66 Arg2:T63
+T67	NOUN 87 95	གྱིམ་པོ་
+T68	VERB 62 67	རིངས་
+A36	Tense T68 Past
+T69	NOUN 56 62	གློ་བ་
+R11	arg2-lvc Arg1:T68 Arg2:T69
+N8	Reference T20 Nonverbs:0099	འོ་√cv
+N5	Reference T17 Nonverbs:0074	ནས་√cv
+N18	Reference T30 Nonverbs:0012	གྱི་√case
+N22	Reference T36 Hill:0132	འཁུ་
+T55	X 0 6	[---]་
+T70	X 25 32	[---]་པ
+T71	X 46 52	[---]་
+T72	X 95 101	[---]་
+T73	X 142 147	[---]
+T74	PUNCT 147 148	།
+T75	PUNCT 173 174	།
+T39	PROPN 82 87	པ་ཙབ་
+T76	PUNCT 33 34	།
+T77	PUNCT 13 14	།
+T78	PUNCT 69 70	།
+T79	PUNCT 120 121	།
+T80	PUNCT 198 199	།
+T81	X 214 220	[---]་
+T83	X 249 255	[---]་
+T84	PUNCT 256 257	།
+T85	PUNCT 281 282	།
+T86	PUNCT 309 310	།
+T87	X 316 325	[---]་ལྟ་
+T88	PUNCT 342 343	།
+T89	PUNCT 360 361	།
+T90	X 385 391	[---]་
+T91	PUNCT 393 394	།
+T92	PUNCT 248 249	།
+T93	PUNCT 141 142	།
+T65	PROPN 367 375	བཙན་སྲོང
+T94	PUNCT 375 376	།
+N19	Reference T68 Hill:1917	འདྲིང་
