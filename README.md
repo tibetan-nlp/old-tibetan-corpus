@@ -37,7 +37,7 @@ Here is some metadata about the collection.
 | Language | Tibetan, Old |
 | Normalization | Yes |
 | Licensing | Creative Commons Attribution 4.0 International License (CC-BY) |
-| Annotator's notes | Regular grammatical structure, uniform verb frames, repetitive narrative structure |
+| Annotator's notes | Regular grammatical structure, uniform verb frames, repetitive narrative structure. |
 
 | Key | Value |
 | ------------- | ------------- |
@@ -57,4 +57,4 @@ Here is some metadata about the collection.
 | Language | Tibetan, Old |
 | Normalization | Yes |
 | Licensing | Creative Commons Attribution 4.0 International License (CC-BY) |
-| Annotator's notes | Prose interspersed with songs and poems, rich vocabulary, diverse verb structures - e.g. light verbs |
+| Annotator's notes | Prose interspersed with songs and poems, rich vocabulary, diverse verb structures - e.g. light verbs. |
