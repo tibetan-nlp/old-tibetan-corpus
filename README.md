@@ -13,6 +13,51 @@ The _Old Tibetan Annals_ and the _Old Tibetan Chronicle_ were given a lot of lov
 
 In the case of the _Old Tibetan Annals_, we copied the English translation of the text from _The Old Tibetan Annals: An Annotated Translation of Tibet's First History_ by Brandon Dotson, and aligned this translation to the Tibetan text. You can see this in the CONLLU file for the text.
 
-The _archive_ directory contains files in legacy or unmaintained formats. 
+The _archive_ directory contains files in legacy or unmaintained formats.
 
 You may cite this work by referencing this repository and its authors: Christian Faggionato, Edward Garrett, and Marieke Meelen. We thank the AHRC for its funding of the project _Lexicography in Motion_ (2017-2020, PI Ulrich Pagel).
+
+Here is some metadata about the collection.
+
+| Key | Value |
+| ------------- | ------------- |
+| Text ID | OTA |
+| Title (eng) | Old Tibetan Annals |
+| Title (bod) | -- |
+| Source (eng) | Dotson, Brandon (2009). The Old Tibetan Annals: An Annotated Translation of Tibet's First History. VÖAW, Austria. |
+| Source (bod) | https://otdo.aa-ken.jp/archives.cgi?p=Pt_1288 |
+| Date | 25-07-2017 |
+| Author | Unknown |
+| Translation | Brandon Dotson |
+| Tagging | Christian Faggionato, Marieke Meelen |
+| Annotation | Christian Faggionato |
+| Alignment | Christian Faggionato |
+| Genre | History |
+| Region | Tibet |
+| Language | Tibetan, Old |
+| Normalization | Yes |
+| Licensing | Creative Commons Attribution 4.0 International License (CC-BY) |
+| Annotator's notes | •	Regular grammatical structure, uniform verb frames
+•	Repetitive narrative structure |
+
+| Key | Value |
+| ------------- | ------------- |
+| Text ID | OTC |
+| Title (eng) | Old Tibetan Chronicle |
+| Title (bod) | -- |
+| Source (eng) | Dotson, Brandon (2013). The Victory Banquet. The Old Tibetan Chronicle and the Rise of Tibetan Historical Narrative. Unpublished Habilitation script, Ludwig-Maximilians-Universität, München. |
+| Source (bod) | https://otdo.aa-ken.jp/archives.cgi?p=Pt_1287 |
+| Date | 08-08-2017 |
+| Author | Unknown |
+| Translation | -- |
+| Tagging | Christian Faggionato, Marieke Meelen |
+| Annotation | Christian Faggionato |
+| Alignment | -- |
+| Genre | History |
+| Region | Tibet |
+| Language | Tibetan, Old |
+| Normalization | Yes |
+| Licensing | Creative Commons Attribution 4.0 International License (CC-BY) |
+| Annotator's notes | •	Prose interspersed with songs and poems
+•	Rich vocabulary
+•	Diverse verb structures, e.g. light verbs |
